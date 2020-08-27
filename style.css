@@ -69,8 +69,8 @@ a:hover {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
+        height: 100vh;
+        top: 0vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -87,6 +87,7 @@ a:hover {
     .burger {
         display: block;
         cursor: pointer;
+        /*position: fixed;*/
     }
 }
 
