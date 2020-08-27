@@ -31,6 +31,7 @@ html, body {
     font-size: 0.7em;
     justify-content: center;
     margin: 0;
+    padding: 0;
 } 
 
 .nav-links li {
@@ -57,6 +58,8 @@ a:hover {
     height: 2px;
     background-color: #fff;
     margin: 5px;
+    transition: all 0.3s ease;
+    
 }
 
 @media screen and (max-width: 1024px){
@@ -71,10 +74,12 @@ a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #;
-        width: 50%;
+        background-color: teal;
+        width: 100%;
         transform: translateX(100%);
         transition: transform 0.5 ease-in;
+        position: fixed;
+
     }
     .nav-links li {
         opacity: 0;
@@ -87,6 +92,28 @@ a:hover {
 
 .nav-active {
     transform: translateX(0%);
+}
+
+/* Nav Burger Animation */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
 }
 /* END Nav Bar */
 
