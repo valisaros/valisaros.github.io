@@ -11,6 +11,11 @@ html, body {
 
 
 /* Nav Bar */
+.logo {
+    letter-spacing: 3px;
+    text-transform: lowercase;
+}
+
 .nav-zone {
     display: flex;
     justify-content: space-around;
@@ -27,12 +32,7 @@ html, body {
     margin: 0;
 } 
 
-.logo {
-    letter-spacing: 3px;
-    text-transform: lowercase;
-}
-
-li {
+.nav-links li {
     padding: 20px;
 }
 
@@ -47,9 +47,15 @@ a:hover {
     text-decoration: none;
 }
 
-.push {
-    margin-right: auto;
+/* BURGER MENU */
+.burger div {
+    width: 25px;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px;
 }
+
+
 
 /* END Nav Bar */
 
