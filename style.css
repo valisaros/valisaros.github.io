@@ -4,7 +4,7 @@ html, body {
 }
 
 .page {
-    background-color: #0a0a0a;
+    background-color: #050505;
     position: relative;
     height: 100vh;
 }
@@ -50,6 +50,8 @@ a:hover {
     color: #fff;
     text-decoration: none;
 }
+
+
 
 /* BURGER MENU */
 .burger {
