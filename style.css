@@ -7,12 +7,14 @@ html, body {
     background-color: #050505;
     position: relative;
     height: 100vh;
+    display: block;
 }
+
 
 
 /* Nav Bar */
 .logo a {
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .bad-script-font {
@@ -23,7 +25,7 @@ html, body {
 
 .nav-zone {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     align-content: center;
     height: 15vh;
@@ -55,6 +57,8 @@ a:hover {
 
 
 
+
+
 /* BURGER MENU */
 .burger {
     display: none;
@@ -65,7 +69,6 @@ a:hover {
     background-color: #fff;
     margin: 6px;
     transition: all 0.3s ease;
-    
 }
 
 @media screen and (max-width: 1024px) {
@@ -81,7 +84,7 @@ a:hover {
         display: flex;
         flex-direction: column;
         background-color: #000;
-        opacity: 0.9;
+        opacity: 0.95;
         align-items: center;
         width: 100%;
         transform: translateX(100%);
@@ -112,6 +115,9 @@ a:hover {
     transform: translateX(0%);
 }
 
+
+
+
 /* Nav Burger Animation */
 @keyframes navLinkFade {
     from {
@@ -139,8 +145,36 @@ a:hover {
 
 
 
-.container {
-    height: 100vh;
+
+/* Jumbotron */
+
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    justify-content: space-around;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 10em;
 }
+
+
+.title {
+    color: #fff;
+    font-size: 3em;
+}
+
+.subtitle {
+    color: #fff;
+    font-size: 2em;
+}
+
+
+
+
+
+
+
 
 
