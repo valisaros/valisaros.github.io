@@ -51,11 +51,14 @@ a {
 }
 
 a:hover {
-    color: #fff;
+    color:#fff;
     text-decoration: none;
 }
 
-
+.nav-links a:hover {
+    transition: all 0.3s;
+    color: #48A2FA;
+}
 
 
 
@@ -179,7 +182,7 @@ a:hover {
 }
 
 .subtitle {
-    color: #fff;
+    color: #78BCFB;
     font-size: 2em;
 }
 
@@ -188,6 +191,8 @@ a:hover {
     text-align: center;
     font-size: 1em;
     margin-top: 0.5em;
+    border: 2px solid #ffffff;
+    background-color: transparent;
 }
 
 .custom-btn {
@@ -200,11 +205,11 @@ a:hover {
     transition: all 0.3s;
 }
 
-.btn-CTA {
-    border: 2px solid #ffffff;
-    background-color: transparent;
+.btn:hover {
+    transform: scale(1.1);
+    color: #0E7EF8;
+    background-color: #fff;
 }
-
 
 
 
