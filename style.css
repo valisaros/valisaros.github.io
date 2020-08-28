@@ -186,6 +186,16 @@ a:hover {
     font-size: 2em;
 }
 
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 2.5em;
+    }
+    .subtitle {
+        font-size: 2em;
+    }
+}
+
 .btn {
     display: inline-block;
     text-align: center;
