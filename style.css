@@ -3,8 +3,8 @@ html, body {
     font-family: 'Nunito', sans-serif;
 }
 
-#page {
-    background-color: #0f0f0f;
+.page {
+    background-color: #0a0a0a;
     position: relative;
     height: 100vh;
 }
