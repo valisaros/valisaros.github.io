@@ -11,13 +11,12 @@ html, body {
 
 
 /* Nav Bar */
-.logo {
-    letter-spacing: 3px;
-    text-transform: lowercase;
-}
-
 .logo a {
     font-size: 2em;
+}
+
+.bad-script-font {
+    font-family: 'Bad Script', cursive;
 }
 
 .nav-zone {
@@ -101,7 +100,7 @@ a:hover {
     }
 
     .logo a {
-        font-size: 3em;
+        font-size: 2em;
     }
 }
 
