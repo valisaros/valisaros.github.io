@@ -160,9 +160,22 @@ a:hover {
 }
 
 
+@media screen and (max-width: 1024px) {
+    .jumbotron {
+        margin-top: 7em;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .jumbotron {
+        margin-top: 3em;
+    }
+}
+
 .title {
     color: #fff;
     font-size: 3em;
+    margin-bottom: 0.5em;
 }
 
 .subtitle {
@@ -170,9 +183,27 @@ a:hover {
     font-size: 2em;
 }
 
+.btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0.5em;
+}
 
+.custom-btn {
+    padding: 0.1em 1em;
+    min-width: 150px;
+    outline: none;
+    border-radius: 0px;
+    color: #ffffff;
+    font-size: 1em;
+    transition: all 0.3s;
+}
 
-
+.btn-CTA {
+    border: 2px solid #ffffff;
+    background-color: transparent;
+}
 
 
 
