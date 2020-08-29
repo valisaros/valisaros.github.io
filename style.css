@@ -3,6 +3,7 @@ html, body {
     font-family: 'Nunito', sans-serif;
 }
 
+/* START HOME PAGE */
 .page {
     background-color: #050505;
     position: relative;
@@ -19,10 +20,9 @@ html, body {
         z-index: 10;
     }
 }*/
+/*    #d87093   */
 
-
-
-/* Nav Bar */
+/* Start Nav Bar */
 .logo a {
     font-size: 2.5em;
 }
@@ -72,7 +72,7 @@ a:hover {
 
 
 
-/* BURGER MENU */
+/* Start BURGER MENU */
 .burger {
     display: none;
 }
@@ -127,11 +127,9 @@ a:hover {
 .nav-active {
     transform: translateX(0%);
 }
+/* End BURGER MENU
 
-
-
-
-/* Nav Burger Animation */
+/* Start Nav Burger Animation */
 @keyframes navLinkFade {
     from {
         opacity: 0;
@@ -152,15 +150,15 @@ a:hover {
 .toggle .line3 {
     transform: rotate(45deg) translate(-6px, -6.5px);
 }
-
-/* END Nav Bar */
-
-
+/* End Nav Burger Animation */
+/* End Nav Bar */
 
 
 
 
-/* Jumbotron */
+
+
+/* Start Jumbotron */
 
 .jumbotron {
     display: flex;
@@ -207,7 +205,7 @@ a:hover {
     }
 }
 
-.btn {
+.page .btn {
     display: inline-block;
     text-align: center;
     font-size: 1em;
@@ -216,7 +214,7 @@ a:hover {
     background-color: transparent;
 }
 
-.custom-btn {
+.page .custom-btn {
     padding: 0.1em 1em;
     min-width: 150px;
     outline: none;
@@ -226,7 +224,7 @@ a:hover {
     transition: all 0.3s;
 }
 
-.btn:hover {
+.page .btn:hover {
     transform: scale(1.1);
     color: #0E7EF8;
     background-color: #fff;
@@ -237,5 +235,70 @@ a:hover {
         background-color: #050505;
     }
 }
+/* End Jumbotron */
+/* END HOME PAGE
 
+/* START PROJECT PAGE */
+#projects {
+    background-color: #fff;
+    position: relative;
+    height: 100vh;
+    display: block;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 0;
+    padding: 5em 0;
+}
+
+.row > * {
+    flex-basis: calc(calc(800px - 100%) * 999);
+    flex-grow: 1;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.projects-title {
+    color: #0E7EF8;
+    font-size: 3em;
+    padding: 2em 0 0.5em 0;
+}
+
+#projects .btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0.5em;
+    border: 2px solid #0E7EF8;
+    background-color: transparent;
+}
+
+#projects .custom-btn {
+    padding: 0.1em 1em;
+    min-width: 200px;
+    outline: none;
+    border-radius: 0px;
+    color: #0E7EF8;
+    font-size: 1.5em;
+    transition: all 0.3s;
+    margin: 0;
+}
+
+#projects .btn:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: #0E7EF8;
+}
+
+#projects a {
+    color: #1270d4;
+    font-size: 1.5em;
+    margin-top: 12px;
+    cursor: pointer;
+}
 
