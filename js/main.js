@@ -2,13 +2,15 @@ const navSlide = () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
     const navLinks = document.querySelectorAll('.nav-links li');
-    
+    const body = document.body;
+
     burger.addEventListener('click', () => {
         
         //Toggle Nav
         nav.classList.toggle('nav-active');
+        // Set the body position to fixed when burger clicked
+        body.style.position = 'fixed';
         
-
         //Animate Links
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
@@ -22,6 +24,10 @@ const navSlide = () => {
         
         //Burger animation
         burger.classList.toggle('toggle');
+        // Disable the fixed position when burger clicked
+        burger.addEventListener('click', () => {
+            body.style.position = '';
+        })
     });
 }
 
