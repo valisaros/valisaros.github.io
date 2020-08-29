@@ -10,6 +10,16 @@ html, body {
     display: block;
 }
 
+/* Make the particles full screen on smartphones */
+@media screen and (max-width: 720px) {
+    #particles-js {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+    }
+}
+
 
 
 /* Nav Bar */
@@ -221,6 +231,10 @@ a:hover {
     background-color: #fff;
 }
 
-
+@media screen and (max-width: 720px) {
+    .btn {
+        background-color: #050505;
+    }
+}
 
 
