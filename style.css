@@ -327,6 +327,19 @@ a:hover {
     background-color: #0a0a0a;
     position: relative;
     display: block;
-    height: 100vh;
+}
+
+.about-title {
+    color: #fff;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 2em;
+}
+
+#about .img-fluid {
+    justify-content: center;
+    max-width: 100%;
+    width: 300px;
+    height: auto;
 }
 /* END ABOUT PAGE */
