@@ -239,6 +239,7 @@ a:hover {
 /* End Jumbotron */
 /* END HOME PAGE
 
+
 /* START PROJECT PAGE */
 #projects {
     background-color: #fff;
@@ -246,6 +247,14 @@ a:hover {
     height: 100vh;
     display: block;
 }
+
+.projects-title {
+    color: #0E7EF8;
+    font-size: 3em;
+    padding: 2em 0 0.5em 0;
+}
+
+/* Make the flex to wrap when it doesn't fit */
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -254,6 +263,7 @@ a:hover {
     padding: 5em 0;
 }
 
+/* Make the flex to adjust by the container */
 .row > * {
     flex-basis: calc(calc(800px - 100%) * 999);
     flex-grow: 1;
@@ -264,10 +274,15 @@ a:hover {
     height: auto;
 }
 
-.projects-title {
-    color: #0E7EF8;
-    font-size: 3em;
-    padding: 2em 0 0.5em 0;
+.text-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-project {
+    font-size: 2em;
 }
 
 #projects .btn {
@@ -296,10 +311,13 @@ a:hover {
     background-color: #0E7EF8;
 }
 
-#projects a {
-    color: #1270d4;
-    font-size: 1.5em;
-    margin-top: 12px;
-    cursor: pointer;
-}
+/* Change the text and image order when show as column */
+@media screen and (max-width: 990px) {
+    #projects #a {
+        order: 2;
+    }
 
+    #projects #b {
+        order: 1;
+    }
+}
