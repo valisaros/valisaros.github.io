@@ -335,7 +335,7 @@ a:hover {
 .about-title {
     color: #fff;
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5em;
     padding-top: 2em;
 }
 
@@ -353,6 +353,21 @@ a:hover {
 
 .about-text {
     color: #fff;
+    font-size: 1.5em;
 }
 /* END ABOUT PAGE */
 
+/* START SKILLS PAGE */
+
+#skills {
+    background-color: #0a0a0a;
+    position: relative;
+    display: block;
+    height: 100vh;
+}
+.skills-text {
+    padding-top: 2em;
+    color: #fff;
+    font-size: 3em;
+    border-bottom: 2px solid #d87093;
+}
