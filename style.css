@@ -251,9 +251,12 @@ a:hover {
 }
 
 .projects-title {
-    color: #0E7EF8;
+    color: #0a0a0a;
     font-size: 3em;
     padding: 2em 0 0.5em 0;
+    text-align: center;
+    
+    
 }
 
 /* Make the flex to wrap when it doesn't fit */
@@ -327,13 +330,13 @@ a:hover {
 
 /* START AB0UT PAGE */
 #about {
-    background-color: #0a0a0a;
+    background-color: #fff;
     position: relative;
     display: block;
 }
 
 .about-title {
-    color: #fff;
+    color: #0a0a0a;
     text-align: center;
     font-size: 3.5em;
     padding-top: 2em;
@@ -352,7 +355,7 @@ a:hover {
 }
 
 .about-text {
-    color: #fff;
+    color: #0a0a0a;
     font-size: 1.5em;
 }
 /* END ABOUT PAGE */
@@ -360,14 +363,27 @@ a:hover {
 /* START SKILLS PAGE */
 
 #skills {
-    background-color: #0a0a0a;
+    background-color: #fff;
     position: relative;
     display: block;
     height: 100vh;
 }
 .skills-text {
     padding-top: 2em;
-    color: #fff;
+    color: #0a0a0a;
     font-size: 3em;
     border-bottom: 2px solid #d87093;
+    text-align: center;
+}
+
+#skills > * {
+    color: #0a0a0a;
+}
+
+#skills .row {
+    justify-content: space-between;
+}
+
+#skills .row > * {
+    text-align: center;
 }
