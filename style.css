@@ -252,7 +252,7 @@ a:hover {
 }
 
 .projects-title {
-    padding-top: 1.5em;
+    padding-top: 2.5em;
     color: #0a0a0a;
     font-size: 3em;
     /*border-bottom: 2px solid #d87093;*/
@@ -398,6 +398,15 @@ a:hover {
     position: relative;
     display: flex;
     height: 100vh;
+}
+
+#contact h2 {
+    color: #fff;
+    padding-top: 1.5em;
+    font-size: 3em;
+    /*border-bottom: 2px solid #d87093;*/
+    text-align: center;
+    letter-spacing: 0.2em;
 }
 
 
