@@ -192,6 +192,7 @@ a:hover {
     color: #fff;
     font-size: 3em;
     margin-bottom: 0.5em;
+    
 }
 
 .subtitle {
@@ -251,11 +252,12 @@ a:hover {
 }
 
 .projects-title {
+    padding-top: 1.5em;
     color: #0a0a0a;
     font-size: 3em;
-    padding: 2em 0 0.5em 0;
+    /*border-bottom: 2px solid #d87093;*/
     text-align: center;
-    
+    letter-spacing: 0.2em;
     
 }
 
@@ -338,8 +340,9 @@ a:hover {
 .about-title {
     color: #0a0a0a;
     text-align: center;
-    font-size: 3.5em;
+    font-size: 3em;
     padding-top: 2em;
+    letter-spacing: 0.2em;
 }
 
 .about-content {
@@ -367,11 +370,12 @@ a:hover {
     display: block;
 }
 .skills-text {
-    padding-top: 2em;
+    padding-top: 1.5em;
     color: #0a0a0a;
     font-size: 3em;
     /*border-bottom: 2px solid #d87093;*/
     text-align: center;
+    letter-spacing: 0.2em;
 }
 
 #skills .row {
@@ -392,7 +396,9 @@ a:hover {
 #contact {
     background-color: #050505;
     position: relative;
-    display: block;
+    display: flex;
     height: 100vh;
 }
+
+
 
