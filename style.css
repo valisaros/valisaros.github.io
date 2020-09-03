@@ -7,7 +7,7 @@ html, body {
 
 /* START HOME PAGE */
 .page {
-    background-color: #111111;
+    background-color: #0a0a0a;
     position: relative;
     height: 100vh;
     display: block;
@@ -361,23 +361,17 @@ a:hover {
 /* END ABOUT PAGE */
 
 /* START SKILLS PAGE */
-
 #skills {
     background-color: #fff;
     position: relative;
     display: block;
-    height: 100vh;
 }
 .skills-text {
     padding-top: 2em;
     color: #0a0a0a;
     font-size: 3em;
-    border-bottom: 2px solid #d87093;
+    /*border-bottom: 2px solid #d87093;*/
     text-align: center;
-}
-
-#skills > * {
-    color: #0a0a0a;
 }
 
 #skills .row {
@@ -386,4 +380,19 @@ a:hover {
 
 #skills .row > * {
     text-align: center;
+    color: #0a0a0a;
 }
+
+#skills .row h2 {
+    padding-bottom: 1em;
+}
+/* END SKILLS PAGE */
+
+/* START CONTACT PAGE */
+#contact {
+    background-color: #050505;
+    position: relative;
+    display: block;
+    height: 100vh;
+}
+
