@@ -7,7 +7,7 @@ html, body {
 
 /* START HOME PAGE */
 .page {
-    background-color: #0a0a0a;
+    background-color: #060606;
     position: relative;
     height: 100vh;
     display: block;
@@ -394,7 +394,7 @@ a:hover {
 
 /* START CONTACT PAGE */
 #contact {
-    background-color: #050505;
+    background-color: #060606;
     position: relative;
     display: flex;
     height: 100vh;
@@ -408,6 +408,36 @@ a:hover {
     text-align: center;
     letter-spacing: 0.2em;
 }
+#contact .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+#contact .btn {
+    color: #fff;
+    border-color: #fff;
+    margin-top: 0.5em;
+    border: 2px solid #ffffff;
 
+}
 
+#contact .custom-btn {
+    padding: 0.5em 0em;
+    width: 300px;
+    outline: none;
+    border-radius: 0px;
+    color: #ffffff;
+    font-size: 1.5em;
+    transition: all 0.3s;
+}
+
+#contact .btn:hover {
+    transform: scale(1.1);
+    color: #0E7EF8;
+    background-color: #fff;
+}
+
+#contact #github-btn {
+    background-color: teal;
+}
