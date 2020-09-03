@@ -434,10 +434,27 @@ a:hover {
 
 #contact .btn:hover {
     transform: scale(1.1);
-    color: #0E7EF8;
+    color: #fff;
     background-color: #fff;
 }
 
 #contact #github-btn {
-    background-color: teal;
+    background-color:#863497;
+}
+
+#contact #linked-btn {
+    background-color:#007cb6;
+}
+
+#contact #insta-btn {
+    background-color:#c1015e;
+}
+
+#contact #youtube-btn {
+    background-color:#ff0003;
+}
+
+#contact #email-btn {
+    background-color:#fff;
+    color: #000;
 }
