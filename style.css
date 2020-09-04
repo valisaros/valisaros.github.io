@@ -3,11 +3,17 @@ html, body {
     /*font-family: 'Nunito', sans-serif; */
     scroll-behavior: smooth;
     font-family: 'Inconsolata', monospace;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
+
+.body::-webkit-scrollbar {
+    display: none;
+  }
 
 /* START HOME PAGE */
 .page {
-    background-color: #060606;
+    background-color: #0a0a0a;
     position: relative;
     height: 100vh;
     display: block;
@@ -297,7 +303,7 @@ a:hover {
     text-align: center;
     font-size: 1em;
     margin-top: 0.5em;
-    border: 2px solid #0E7EF8;
+    border: 2px solid #979ea5;
     background-color: transparent;
 }
 
@@ -369,7 +375,7 @@ a:hover {
     position: relative;
     display: block;
 }
-.skills-text {
+.skills-text{
     padding-top: 1.5em;
     color: #0a0a0a;
     font-size: 3em;
@@ -387,26 +393,33 @@ a:hover {
     color: #0a0a0a;
 }
 
-#skills .row h2 {
+#skills .row h2  {
     padding-bottom: 1em;
 }
 /* END SKILLS PAGE */
 
 /* START CONTACT PAGE */
 #contact {
-    background-color: #060606;
+    background-color: #090909;
     position: relative;
     display: flex;
-    height: 100vh;
 }
 
-#contact h2 {
+.contact-title {
     color: #fff;
-    padding-top: 1.5em;
+    padding-top: 4em;
     font-size: 3em;
     /*border-bottom: 2px solid #d87093;*/
     text-align: center;
     letter-spacing: 0.2em;
+}
+
+#contact p {
+    color: #fff;
+    padding-top: 2em;
+    font-size: 2em;
+    text-align: center;
+
 }
 #contact .row {
     flex-direction: column;
@@ -418,7 +431,7 @@ a:hover {
     color: #fff;
     border-color: #fff;
     margin-top: 0.5em;
-    border: 2px solid #ffffff;
+    border: 2px solid #fff;
 
 }
 
@@ -427,34 +440,44 @@ a:hover {
     width: 300px;
     outline: none;
     border-radius: 0px;
-    color: #ffffff;
+    color: #fff;
     font-size: 1.5em;
     transition: all 0.3s;
 }
 
 #contact .btn:hover {
     transform: scale(1.1);
-    color: #fff;
+    color: #0E7EF8;
     background-color: #fff;
 }
 
-#contact #github-btn {
-    background-color:#863497;
+
+
+#copyright {
+    background-color: #090909;
 }
 
-#contact #linked-btn {
-    background-color:#007cb6;
+#copyright {
+    flex-direction: row;
 }
 
-#contact #insta-btn {
-    background-color:#c1015e;
+.footer-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-#contact #youtube-btn {
-    background-color:#ff0003;
+.push {
+    margin-left: auto;
+}
+#copyright p {
+    font-size: 1em;
+    color: #fff;
+    margin: 0em 3em 1em 3em;
+    text-align: center;
 }
 
-#contact #email-btn {
-    background-color:#fff;
-    color: #000;
+#copyright  {
+    text-decoration: none;
 }
