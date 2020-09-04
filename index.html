@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="./js/aos/aos.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Valeriu Saros - Full Stack Developer</title>
@@ -64,7 +65,7 @@
     <div class="container">
       <h2 class="projects-title">projects</h2>
       <div class="row">
-        <div>
+        <div data-aos="fade-right">
           <img class="img-fluid" src="./assets/project-img.png" alt="">
         </div>
         <div class="text-project">
@@ -119,7 +120,7 @@
             </li>
           </ul>
         </div>
-        <div id="b">
+        <div id="b" data-aos="fade-left">
           <img class="img-fluid" src="./assets/project-img.png" alt="">
         </div>
       </div>
@@ -128,7 +129,7 @@
   <!-- End Projects -->
   <!-- Start About -->
   <div id="about">
-    <div class="container">
+    <div class="container" data-aos="fade-down">
       <h2 class="about-title">about me</h2>
       <div class="about-content">
         <div class="row">
@@ -149,7 +150,7 @@
   </div>
   <!-- End About -->
   <!-- Start Skills-->
-  <div id="skills">
+  <div id="skills" data-aos="fade-up">
     <div class="container">
       <h2 class="skills-text">skills</h2>
       <div class="row">
@@ -219,6 +220,11 @@
 
   <!-- JavaScript -->
   <script src="./js/main.js"></script>
+  <!-- AOS -->
+  <script src="./js/aos/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- Particles Js -->
   <script src="./js/particle-js/particles.min.js"></script>
   <script src="./js/particle-js/app.js"></script>
