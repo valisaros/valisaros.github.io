@@ -403,6 +403,7 @@ a:hover {
     background-color: #090909;
     position: relative;
     display: flex;
+    height: 94vh;
 }
 
 .contact-title {
@@ -452,13 +453,17 @@ a:hover {
 }
 
 
-
+/* Footer Start */
 #copyright {
     background-color: #090909;
 }
 
 #copyright {
     flex-direction: row;
+}
+
+#copyright .row {
+    padding: 0;
 }
 
 .footer-links {
@@ -471,13 +476,28 @@ a:hover {
 .push {
     margin-left: auto;
 }
-#copyright p {
+
+.copyright-text {
+    display: flex;
     font-size: 1em;
     color: #fff;
-    margin: 0em 3em 1em 3em;
-    text-align: center;
+    margin: 0 0 0 1em;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-#copyright  {
-    text-decoration: none;
+/* Make the footer responsive */
+@media screen and (max-width: 800px) {
+    #copyright .row .copyright-text {
+        order: 2;
+    }
+
+    #copyright .row .footer-links {
+        order: 1;
+    }
+    
+    #copyright .row .push {
+        margin: 0;
+    }
 }
+/* Footer End */
