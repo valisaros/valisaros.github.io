@@ -20,6 +20,8 @@
   <link rel="stylesheet" type="text/css" href="style.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- AOS -->
+  <link rel="stylesheet" href="./js/aos/aos.css" />
   <title>Valeriu Saros - Full Stack Developer</title>
 </head>
 
@@ -64,7 +66,9 @@
     <div class="container">
       <h2 class="projects-title">projects</h2>
       <div class="row">
-        <div>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="750">
           <img class="img-fluid" src="./assets/project-img.png" alt="">
         </div>
         <div class="text-project">
@@ -119,7 +123,9 @@
             </li>
           </ul>
         </div>
-        <div id="b">
+        <div id="b"
+          data-aos="fade-left"
+          data-aos-duration="750">
           <img class="img-fluid" src="./assets/project-img.png" alt="">
         </div>
       </div>
@@ -131,7 +137,9 @@
     <div class="container">
       <h2 class="about-title">about me</h2>
       <div class="about-content">
-        <div class="row">
+        <div class="row"
+          data-aos="fade-in"
+          data-aos-duration="750">
           <div id="logo">
             <img class="img-fluid" src="./assets/logo/valisaros.png" alt="Saors Valeriu portrait">
           </div>
@@ -152,7 +160,9 @@
   <div id="skills">
     <div class="container">
       <h2 class="skills-text">skills</h2>
-      <div class="row">
+      <div class="row"
+        data-aos="fade-up"
+        data-aos-duration="750">
         <div>
           <h2>Front End</h2>
           <p>HTML5</p>
@@ -182,7 +192,9 @@
     <div class="container">
       <h2 class="contact-title">get in touch</h2>
       <p>Let's talk about<br> your next project!</p>
-      <div class="row">
+      <div class="row"
+        data-aos="fade-up"
+        data-aos-duration="750">
         <a id="email-btn" class="btn custom-btn" href="https://github.com/valisaros" target="_blank">Send an Email</a>
       </div>
     </div>
@@ -235,6 +247,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="./js/aos/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
