@@ -18,10 +18,9 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="./js/aos/aos.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- AOS -->
-  <link rel="stylesheet" href="./js/aos/aos.css" />
   <title>Valeriu Saros - Full Stack Developer</title>
 </head>
 
@@ -31,7 +30,7 @@
     <div class="container" id="particles-js">
       <!-- Menu -->
       <nav class="nav-zone">
-        <div class="logo">
+        <div class="logo" data-aos="fade-right" data-aos-duration="1250">
           <a class="bad-script-font" href="https://valisaros.github.io">Vali Saros</a>
         </div>
         <ul class="nav-links">
@@ -47,7 +46,7 @@
         </div>
       </nav>
       <!-- End Menu -->
-      <div class="jumbotron">
+      <div class="jumbotron" data-aos="fade-up" data-aos-duration="1250">
         <h1 class="title"><b>Hello, I'm <spam id="name">Saros Valeriu</spam>.</b></h1>
         <br>
         <p class="subtitle">
@@ -64,16 +63,14 @@
   <!-- Start Projects -->
   <div id="projects">
     <div class="container">
-      <h2 class="projects-title">projects</h2>
+      <h2 class="projects-title" data-aos="fade-up" data-aos-duration="1000">projects</h2>
       <div class="row">
-        <div
-          data-aos="fade-right"
-          data-aos-duration="750">
+        <div data-aos="fade-right" data-aos-duration="1000">
           <img class="img-fluid" src="./assets/project-img.png" alt="">
         </div>
-        <div class="text-project">
-          <h2 class="name-project">Personal Portfolio</h2>
-          <p>This project is made for personal use</p>
+        <div class="text-project" data-aos="fade-left" data-aos-duration="1000">
+          <h2 class="name-project">Project Title</h2>
+          <p>Project description</p>
           <ul>
             <li>
               CSS
@@ -98,7 +95,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="text-project" id="a">
+        <div class="text-project" id="a" data-aos="fade-right" data-aos-duration="1000">
           <h3 class="name-project">Project Title</h3>
           <p>Project description</p>
           <ul>
@@ -123,9 +120,7 @@
             </li>
           </ul>
         </div>
-        <div id="b"
-          data-aos="fade-left"
-          data-aos-duration="750">
+        <div id="b" data-aos="fade-left" data-aos-duration="1000">
           <img class="img-fluid" src="./assets/project-img.png" alt="">
         </div>
       </div>
@@ -134,12 +129,10 @@
   <!-- End Projects -->
   <!-- Start About -->
   <div id="about">
-    <div class="container">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
       <h2 class="about-title">about me</h2>
       <div class="about-content">
-        <div class="row"
-          data-aos="fade-in"
-          data-aos-duration="750">
+        <div class="row">
           <div id="logo">
             <img class="img-fluid" src="./assets/logo/valisaros.png" alt="Saors Valeriu portrait">
           </div>
@@ -157,12 +150,10 @@
   </div>
   <!-- End About -->
   <!-- Start Skills-->
-  <div id="skills">
+  <div id="skills" data-aos="fade-up" data-aos-duration="1000">
     <div class="container">
       <h2 class="skills-text">skills</h2>
-      <div class="row"
-        data-aos="fade-up"
-        data-aos-duration="750">
+      <div class="row">
         <div>
           <h2>Front End</h2>
           <p>HTML5</p>
@@ -192,9 +183,7 @@
     <div class="container">
       <h2 class="contact-title">get in touch</h2>
       <p>Let's talk about<br> your next project!</p>
-      <div class="row"
-        data-aos="fade-up"
-        data-aos-duration="750">
+      <div class="row">
         <a id="email-btn" class="btn custom-btn" href="https://github.com/valisaros" target="_blank">Send an Email</a>
       </div>
     </div>
@@ -231,6 +220,11 @@
 
   <!-- JavaScript -->
   <script src="./js/main.js"></script>
+  <!-- AOS -->
+  <script src="./js/aos/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- Particles Js -->
   <script src="./js/particle-js/particles.min.js"></script>
   <script src="./js/particle-js/app.js"></script>
@@ -247,11 +241,6 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-    <!-- AOS -->
-    <script src="./js/aos/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 
 </html>

@@ -9,8 +9,8 @@ const navSlide = () => {
         //Toggle Nav
         nav.classList.toggle('nav-active');
         // Set the body position to fixed when burger clicked
-        //body.style.position = 'fixed';
-        
+        body.style.position = 'fixed';
+        nav-links.data-aos="";
         //Animate Links
         navLinks.forEach((link, index) => {
             if (link.style.animation) {
@@ -25,10 +25,9 @@ const navSlide = () => {
         //Burger animation
         burger.classList.toggle('toggle');
         // Disable the fixed position when burger clicked
-        
-        //burger.addEventListener('click', () => {
-        //    body.style.position = '';
-        //})
+        burger.addEventListener('click', () => {
+            body.style.position = '';
+        })
     });
 }
 
