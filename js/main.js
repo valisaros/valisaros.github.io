@@ -10,7 +10,7 @@ const navSlide = () => {
         nav.classList.toggle('nav-active');
         // Set the body position to fixed when burger clicked
         body.style.position = 'fixed';
-        nav-links.data-aos="";
+        
         //Animate Links
         navLinks.forEach((link, index) => {
             if (link.style.animation) {

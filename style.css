@@ -13,7 +13,7 @@ html, body {
 
 /* START HOME PAGE */
 .page {
-    background-color: #101829;
+    background-color: #111111;
     position: relative;
     height: 100vh;
     display: block;
@@ -154,6 +154,11 @@ a:hover {
 /* End Nav Burger Animation */
 /* End Nav Bar */
 
+
+
+
+
+
 /* Start Jumbotron */
 
 .jumbotron {
@@ -166,6 +171,7 @@ a:hover {
     margin: 0;
     margin-top: 10em;
 }
+
 
 @media screen and (max-width: 1024px) {
     .jumbotron {
@@ -248,7 +254,8 @@ a:hover {
     font-size: 3em;
     /*border-bottom: 2px solid #d87093;*/
     text-align: center;
-    letter-spacing: 0.2em;  
+    letter-spacing: 0.2em;
+    
 }
 
 /* Make the flex to wrap when it doesn't fit */
