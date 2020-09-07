@@ -1,10 +1,9 @@
 html, body {
     margin: 0;
-    /*font-family: 'Nunito', sans-serif; */
     scroll-behavior: smooth;
-    font-family: 'Inconsolata', monospace;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    font-family: 'Work Sans', sans-serif;
 }
 
 .body::-webkit-scrollbar {
@@ -203,9 +202,10 @@ a:hover {
 
 .title {
     color: #fff;
+    font-family: 'Montserrat', sans-serif;
     font-size: 5em;
-    margin-bottom: 0.5em;
-    
+    margin-bottom: 10px;
+
 }
 
 #hi {
@@ -213,24 +213,37 @@ a:hover {
     color: aqua;
     font-weight: normal;
     padding-left: 5px;
-    margin: 0;
+    margin-bottom: 5px;
 }
 
 .subtitle {
-    color: #78BCFB;
-    font-size: 2em;
+    color: #9b9a9a;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    margin-bottom: 0.5em;
 }
 
+#mini-text {
+    color: #9b9a9a;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 720px) {
     #hi {
         font-size: 1em;
     }
     .title {
-        font-size: 2.5em;
+        font-size: 4em;
+        margin-bottom: 0.2em;
     }
     .subtitle {
-        font-size: 1em;
+        font-size: 3em;
+        margin-bottom: 1em;
+    }
+
+    .logo a {
+        padding-left: 0;
     }
 }
 
@@ -238,7 +251,7 @@ a:hover {
     display: inline-block;
     text-align: center;
     font-size: 1em;
-    margin-top: 0.5em;
+    margin-top: 2em;
     border: 2px solid aqua;
     background-color: transparent;
 }
@@ -247,10 +260,11 @@ a:hover {
     padding: 0.1em 1em;
     min-width: 150px;
     outline: none;
-    border-radius: 0px;
+    border-radius: 3px;
     color: aqua;
     font-size: 1em;
     transition: all 0.3s;
+    padding: 0.5em 0.5em;
 }
 
 .page .btn:hover {
@@ -270,7 +284,7 @@ a:hover {
 
 /* START PROJECT PAGE */
 #projects {
-    background-color: #fff;
+    background-color: #111;
     position: relative;
     display: block;
 }
