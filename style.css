@@ -50,18 +50,29 @@ html, body {
     padding: 0;
 } 
 
+.count {
+    counter-increment: item 1;
+}
+
+.count::before {
+    content: "0" counter(item) ".";
+    font-size: 16px;
+    color: aqua;
+}
+
 .nav-links li {
     padding: 20px;
 }
 
-#resume {
-    color: #;
+#resume a {
+    color:aqua;
 }
 
 a {
     color: #fff;
     text-decoration: none;
     font-size: 1.5em;
+    padding: 12px 10px;
 }
 
 a:hover {
@@ -71,7 +82,7 @@ a:hover {
 
 .nav-links a:hover {
     transition: all 0.3s;
-    color: #48A2FA;
+    color: aqua;
 }
 
 #name {
@@ -82,6 +93,7 @@ a:hover {
 .burger {
     display: none;
 }
+
 .burger div {
     width: 25px;
     height: 3px;
@@ -113,6 +125,10 @@ a:hover {
         transform: translateX(100%);
         transition: transform 0.5 ease-in;
         position: fixed;
+    }
+
+    .count::before {
+        font-size: 2.5em;
     }
 
     .nav-links a {
