@@ -234,10 +234,10 @@ a:hover {
 @media screen and (max-width: 720px) {
     #hi {
         font-size: 1em;
+        margin-bottom: 3px;
     }
     .title {
         font-size: 3em;
-        margin-bottom: 0.2em;
     }
     .subtitle {
         font-size: 2em;
@@ -302,7 +302,7 @@ a:hover {
     letter-spacing: 5px;
     display: flex;
 }
-/////////////////////////////////////////////////////////////////////////
+
 .projects-title:after {
     content: "";
     display: block;
