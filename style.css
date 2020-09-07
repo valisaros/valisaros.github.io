@@ -14,7 +14,6 @@ html, body {
 .page {
     background-color: #111111;
     position: relative;
-    height: 100vh;
     display: block;
 }
 
@@ -174,8 +173,11 @@ a:hover {
 /* End Nav Burger Animation */
 /* End Nav Bar */
 
-/* Start Jumbotron */
+.container {
+    padding-bottom: 10em; 
+}
 
+/* Start Jumbotron */
 .jumbotron {
     display: flex;
     flex-direction: column;
@@ -269,8 +271,8 @@ a:hover {
 
 .page .btn:hover {
     transform: scale(1.1);
-    color: aqua;
-    background-color: #fff;
+    color: #fff;
+    background-color: rgb(0, 66, 66);
 }
 
 @media screen and (max-width: 720px) {
@@ -279,9 +281,12 @@ a:hover {
     }
 }
 /* End Jumbotron */
-/* END HOME PAGE
+/* END HOME PAGE */
 
-
+.count-title::before {
+    counter-increment: section 1;
+    content: "0" counter(section) ".";
+}
 /* START PROJECT PAGE */
 #projects {
     background-color: #111;
@@ -290,15 +295,23 @@ a:hover {
 }
 
 .projects-title {
-    padding-top: 2.5em;
-    color: #0a0a0a;
+    padding-top: 3em;
+    color: #ffffff;
     font-size: 3em;
-    /*border-bottom: 2px solid #d87093;*/
-    text-align: center;
-    letter-spacing: 0.2em;
-    
+    text-align: left;
+    letter-spacing: 5px;
+    display: flex;
 }
-
+/////////////////////////////////////////////////////////////////////////
+.projects-title:after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    margin-left: 20px;
+}
 /* Make the flex to wrap when it doesn't fit */
 .row {
     display: flex;
@@ -370,13 +383,13 @@ a:hover {
 
 /* START AB0UT PAGE */
 #about {
-    background-color: #fff;
+    background-color: #111;
     position: relative;
     display: block;
 }
 
 .about-title {
-    color: #0a0a0a;
+    color: #fff;
     text-align: center;
     font-size: 3em;
     padding-top: 2em;
@@ -396,20 +409,20 @@ a:hover {
 }
 
 .about-text {
-    color: #0a0a0a;
+    color: #fff;
     font-size: 1.5em;
 }
 /* END ABOUT PAGE */
 
 /* START SKILLS PAGE */
 #skills {
-    background-color: #fff;
+    background-color: #111;
     position: relative;
     display: block;
 }
 .skills-text{
     padding-top: 1.5em;
-    color: #0a0a0a;
+    color: #fff;
     font-size: 3em;
     /*border-bottom: 2px solid #d87093;*/
     text-align: center;
@@ -422,7 +435,7 @@ a:hover {
 
 #skills .row > * {
     text-align: center;
-    color: #0a0a0a;
+    color: #fff;
 }
 
 #skills .row h2  {
@@ -432,7 +445,7 @@ a:hover {
 
 /* START CONTACT PAGE */
 #contact {
-    background-color: #090909;
+    background-color: #111;
     position: relative;
     display: flex;
     height: 94vh;
@@ -492,7 +505,7 @@ a:hover {
 }
 /* FOOTER START */
 #copyright {
-    background-color: #090909;
+    background-color: #111;
 }
 
 #copyright {
