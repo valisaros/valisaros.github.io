@@ -20,9 +20,6 @@ html, body {
 /*    #d87093   */
 
 /* Start Nav Bar */
-.logo a {
-    font-size: 2em;
-}
 
 .bad-script-font {
     letter-spacing: 3px;
@@ -66,14 +63,14 @@ html, body {
     color:aqua;
 }
 
-a {
+.nav-zone a {
     color: #fff;
     text-decoration: none;
     font-size: 1.5em;
     padding: 12px 10px;
 }
 
-a:hover {
+.nav-zone .logo a:hover {
     color:#fff;
     text-decoration: none;
 }
@@ -83,6 +80,9 @@ a:hover {
     color: aqua;
 }
 
+.logo a {
+    font-size: 2em;
+}
 /* Start BURGER MENU */
 .burger {
     display: none;
@@ -283,18 +283,14 @@ a:hover {
 /* End Jumbotron */
 /* END HOME PAGE */
 
-.count-title::before {
-    counter-increment: section 1;
-    content: "0" counter(section) ".";
-}
-/* START PROJECT PAGE */
-#projects {
-    background-color: #111;
-    position: relative;
-    display: block;
+.count-titles {
+    color: aqua;
+    font-size: 0.5em;
+    padding: 0;
+    margin: 0;
 }
 
-.projects-title {
+.titles {
     padding-top: 3em;
     color: #ffffff;
     font-size: 3em;
@@ -303,7 +299,34 @@ a:hover {
     display: flex;
 }
 
-.projects-title:after {
+.titles::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 300px;
+    background-color: #9b9a9a;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+/* START AB0UT PAGE */
+#about {
+    background-color: #111;
+    position: relative;
+    display: block;
+}
+
+.about-title {
+    color: #fff;
+    text-align: left;
+    font-size: 3em;
+    padding-top: 2em;
+    letter-spacing: 0.2em;
+    display: flex;
+}
+
+.about-title:after {
     content: "";
     display: block;
     height: 1px;
@@ -311,7 +334,86 @@ a:hover {
     background-color: rgb(255, 255, 255);
     position: relative;
     margin-left: 20px;
+    margin-top: 35px;
 }
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-content .row {
+    padding-bottom: 0;
+}
+
+#profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    font-size: 1.25em;
+    color: #9b9a9a;
+}
+
+.about-text a{
+    color: aqua;
+    font-size: 1em;
+    text-decoration: none;
+}
+#country {
+    color: aqua;
+}
+/* END ABOUT PAGE */
+
+/* START SKILLS PAGE */
+#skills {
+    background-color: #111;
+    position: relative;
+    display: block;
+}
+
+.skills-text{
+    color: #fff;
+    font-size: 3em;
+    /*border-bottom: 2px solid #d87093;*/
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+/* Make the flex to wrap when it doesn't fit */
+#skills .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 0;
+    padding: 5em 0;
+    justify-content: space-between;
+}
+
+/* Make the flex to adjust by the container */
+#skills .row > * {
+    flex-basis: calc(calc(800px - 100%) * 999);
+    flex-grow: 1;
+    text-align: center;
+    color: #9b9a9a;
+    font-size: 1em;
+}
+
+#skills .row h2 {
+    padding-bottom: 1em;
+    color: aqua;
+}
+/* END SKILLS PAGE */
+
+/* START PROJECT PAGE */
+#projects {
+    background-color: #111;
+    position: relative;
+    display: block;
+}
+
 /* Make the flex to wrap when it doesn't fit */
 .row {
     display: flex;
@@ -381,86 +483,25 @@ a:hover {
 }
 /* END PROJECT PAGE */
 
-/* START AB0UT PAGE */
-#about {
-    background-color: #111;
-    position: relative;
-    display: block;
-}
-
-.about-title {
-    color: #fff;
-    text-align: center;
-    font-size: 3em;
-    padding-top: 2em;
-    letter-spacing: 0.2em;
-}
-
-.about-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about-text {
-    color: #fff;
-    font-size: 1.5em;
-}
-/* END ABOUT PAGE */
-
-/* START SKILLS PAGE */
-#skills {
-    background-color: #111;
-    position: relative;
-    display: block;
-}
-.skills-text{
-    padding-top: 1.5em;
-    color: #fff;
-    font-size: 3em;
-    /*border-bottom: 2px solid #d87093;*/
-    text-align: center;
-    letter-spacing: 0.2em;
-}
-
-#skills .row {
-    justify-content: space-between;
-}
-
-#skills .row > * {
-    text-align: center;
-    color: #fff;
-}
-
-#skills .row h2  {
-    padding-bottom: 1em;
-}
-/* END SKILLS PAGE */
 
 /* START CONTACT PAGE */
 #contact {
     background-color: #111;
     position: relative;
     display: flex;
-    height: 94vh;
 }
 
 .contact-title {
     color: #fff;
     padding-top: 4em;
     font-size: 3em;
-    /*border-bottom: 2px solid #d87093;*/
     text-align: center;
     letter-spacing: 0.2em;
+    display: flex;
+    justify-content: center;
 }
 
-#contact p {
+#contact #lets-talk {
     color: #fff;
     padding-top: 2em;
     font-size: 2em;
@@ -497,12 +538,6 @@ a:hover {
     background-color: #fff;
 }
 
-#contact particles-js {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-}
 /* FOOTER START */
 #copyright {
     background-color: #111;
