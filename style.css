@@ -173,6 +173,89 @@ html, body {
 /* End Nav Burger Animation */
 /* End Nav Bar */
 
+/* Start side nav links */
+.left-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: fixed;
+    justify-content: center;
+    bottom: 0px;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #9b9a9a;
+    transition: color 0.5s;
+    font-size: 1.25em;
+}
+
+.nav-link:hover {
+    color: aqua;
+}
+
+.left-links:after {
+    content: "";
+    display: block;
+    height: 150px;
+    width: 1px;
+    background-color: #9b9a9a;
+    position: relative;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+/* End side nav links */
+
+/* Start right mail */
+.right-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: auto;
+    right: 40px;
+}
+
+.right-mail {
+    writing-mode: vertical-rl;
+    color: #9b9a9a;
+    font-size: 1em;
+    letter-spacing: 1px;
+    transition: color 0.5s;
+}
+
+.right-mail:hover {
+    text-decoration: none;
+    color: aqua;
+}
+
+.right-nav:after {
+    content: "";
+    display: block;
+    height: 150px;
+    width: 1px;
+    background-color: #9b9a9a;
+    position: relative;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+/* End right mail */
+
+/* Make the side nav display none on smaller screens */
+@media screen and (max-width: 1420px) {
+    .left-links {
+        display: none;
+    }
+
+    .right-nav {
+        display: none;
+    }
+}
+/* End side nav responsive */
+
+
 .container {
     padding-bottom: 8em; 
 }
@@ -318,7 +401,6 @@ html, body {
 /* START AB0UT PAGE */
 #about {
     background-color: #111;
-    position: relative;
     display: block;
 }
 
@@ -363,7 +445,6 @@ html, body {
 /* START SKILLS PAGE */
 #skills {
     background-color: #111;
-    position: relative;
     display: block;
 }
 
@@ -403,7 +484,6 @@ html, body {
 /* START PROJECT PAGE */
 #projects {
     background-color: #111;
-    position: relative;
     display: block;
 }
 
@@ -608,8 +688,7 @@ html, body {
 }
 
 /* Make the footer links appear when less than 1080px */
-
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 1420px) {
     #copyright .nav-link {
         display: none;
     }
