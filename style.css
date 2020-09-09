@@ -174,7 +174,7 @@ html, body {
 /* End Nav Bar */
 
 .container {
-    padding-bottom: 6em; 
+    padding-bottom: 8em; 
 }
 
 /* Start Jumbotron */
@@ -286,10 +286,12 @@ html, body {
 .titles {
     padding-top: 3em;
     color: #ffffff;
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: left;
-    letter-spacing: 5px;
     display: flex;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 1px;
 }
 
 .titles::after {
@@ -367,9 +369,10 @@ html, body {
 
 .skills-text{
     color: #fff;
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
-    letter-spacing: 0.2em;
+    letter-spacing: 4px;
+    font-weight: 500;
 }
 
 /* Make the flex to wrap when it doesn't fit */
@@ -486,18 +489,28 @@ html, body {
 /* START CONTACT PAGE */
 #contact {
     background-color: #111;
-    position: relative;
     display: flex;
+}
+
+#contact .contact-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: flex-start;
+    padding-top: 10em;
+    margin-bottom: 8em;
 }
 
 .contact-title {
     color: #fff;
-    padding-top: 4em;
-    font-size: 4em;
+    font-size: 3.5em;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-weight: 800;
+    margin: 0;
 }
 
 .count-titles-contact::before {
@@ -510,8 +523,9 @@ html, body {
     color: #9b9a9a;
     padding-top: 2em;
     font-size: 1.25em;
+    width: 60%;
     text-align: center;
-
+    margin: 0;
 }
 
 @media screen and (max-width: 1020px) {
@@ -520,7 +534,8 @@ html, body {
     }
     
     #contact #lets-talk {
-        font-size: 1.5em;
+        font-size: 1.10em;
+        width: 100%;
     }
 }
 
@@ -532,39 +547,33 @@ html, body {
 
 #contact .btn {
     color: #fff;
-    border-color: #fff;
-    margin-top: 0.5em;
-    border: 2px solid #fff;
-
+    margin-top: 0.25em;
+    border: 2px solid aqua;
 }
 
 #contact .custom-btn {
     padding: 0.5em 0em;
-    width: 300px;
+    width: 250px;
     outline: none;
-    border-radius: 0px;
+    border-radius: 3px;
     color: #fff;
     font-size: 1.5em;
     transition: all 0.3s;
+    margin: 0;
 }
 
 #contact .btn:hover {
     transform: scale(1.1);
-    color: #0E7EF8;
-    background-color: #fff;
+    color: #fff;
+    background-color: rgb(0, 66, 66);
 }
 
 /* FOOTER START */
 #copyright {
     background-color: #111;
-}
-
-#copyright {
-    flex-direction: row;
-}
-
-#copyright .row {
-    padding: 0;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
 }
 
 .footer-links {
@@ -572,33 +581,37 @@ html, body {
     list-style: none;
     margin: 0;
     padding: 0;
+    color: aqua;
 }
 
-.push {
-    margin-left: auto;
-}
 
 .copyright-text {
-    display: flex;
     font-size: 1em;
     color: #fff;
-    margin: 0 0 0 1em;
-    justify-content: flex-start;
-    align-items: center;
+    margin-bottom: 2em;
+    transition: color 0.5s;
 }
 
-/* Make the footer responsive */
-@media screen and (max-width: 800px) {
-    #copyright .row .copyright-text {
-        order: 2;
-    }
+.copyright-text:hover{
+    text-decoration: none;
+    color: aqua;
+}
 
-    #copyright .row .footer-links {
-        order: 1;
-    }
-    
-    #copyright .row .push {
-        margin: 0;
+#copyright .nav-link {
+    font-size: 1.5em;
+    color: #9b9a9a;
+    transition: color 0.5s;
+}
+
+#copyright .nav-link:hover {
+    color: aqua;
+}
+
+/* Make the footer links appear when less than 1080px */
+
+@media screen and (min-width: 1080px) {
+    #copyright .nav-link {
+        display: none;
     }
 }
 /* FOOTER END */
