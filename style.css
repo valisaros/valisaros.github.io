@@ -174,7 +174,7 @@ html, body {
 /* End Nav Bar */
 
 .container {
-    padding-bottom: 10em; 
+    padding-bottom: 6em; 
 }
 
 /* Start Jumbotron */
@@ -312,6 +312,7 @@ html, body {
         margin-top: 20px;
     }
 }
+
 /* START AB0UT PAGE */
 #about {
     background-color: #111;
@@ -330,6 +331,7 @@ html, body {
     flex-direction: column;
     align-items: center;
 }
+
 .about-content .row {
     padding-bottom: 0;
 }
@@ -366,7 +368,6 @@ html, body {
 .skills-text{
     color: #fff;
     font-size: 3em;
-    /*border-bottom: 2px solid #d87093;*/
     text-align: center;
     letter-spacing: 0.2em;
 }
@@ -377,7 +378,7 @@ html, body {
     flex-wrap: wrap;
     gap: 2em;
     margin: 0;
-    padding: 5em 0;
+    padding: 5em 0 0 0; 
     justify-content: space-between;
 }
 
@@ -409,7 +410,7 @@ html, body {
     flex-wrap: wrap;
     gap: 2em;
     margin: 0;
-    padding: 5em 0;
+    padding: 5em 0 0 0;
 }
 
 /* Make the flex to adjust by the container */
@@ -492,9 +493,8 @@ html, body {
 .contact-title {
     color: #fff;
     padding-top: 4em;
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
-    letter-spacing: 0.2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -507,12 +507,23 @@ html, body {
 }
 
 #contact #lets-talk {
-    color: #fff;
+    color: #9b9a9a;
     padding-top: 2em;
-    font-size: 2em;
+    font-size: 1.25em;
     text-align: center;
 
 }
+
+@media screen and (max-width: 1020px) {
+    .contact-title {
+        font-size: 2.5em;
+    }
+    
+    #contact #lets-talk {
+        font-size: 1.5em;
+    }
+}
+
 #contact .row {
     flex-direction: column;
     justify-content: center;

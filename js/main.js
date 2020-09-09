@@ -28,6 +28,7 @@ const navSlide = () => {
         //burger.addEventListener('click', () => {
             //body.style.position = '';
         //})
+        
     });
 }
 
