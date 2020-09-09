@@ -108,7 +108,7 @@ html, body {
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 100vh;
+        height: 100%;
         top: 0vh;
         display: flex;
         flex-direction: column;
@@ -136,7 +136,7 @@ html, body {
     .burger {
         display: block;
         cursor: pointer;
-        /*position: fixed;*/
+        position: "";
     }
 
     .logo a {
@@ -236,9 +236,11 @@ html, body {
         font-size: 1em;
         margin-bottom: 3px;
     }
+
     .title {
         font-size: 3em;
     }
+
     .subtitle {
         font-size: 2em;
         margin-bottom: 1em;
@@ -273,22 +275,13 @@ html, body {
     transform: scale(1.1);
     color: #fff;
     background-color: rgb(0, 66, 66);
+
 }
 
-@media screen and (max-width: 720px) {
-    .btn {
-        background-color: #050505;
-    }
-}
+
 /* End Jumbotron */
 /* END HOME PAGE */
 
-.count-titles {
-    color: aqua;
-    font-size: 0.5em;
-    padding: 0;
-    margin: 0;
-}
 
 .titles {
     padding-top: 3em;
@@ -310,6 +303,15 @@ html, body {
     margin-top: 30px;
 }
 
+@media screen and (max-width: 1020px) {
+    .titles {
+        font-size: 2em;
+    }
+
+    .titles::after {
+        margin-top: 20px;
+    }
+}
 /* START AB0UT PAGE */
 #about {
     background-color: #111;
@@ -317,24 +319,10 @@ html, body {
     display: block;
 }
 
-.about-title {
-    color: #fff;
-    text-align: left;
-    font-size: 3em;
-    padding-top: 2em;
-    letter-spacing: 0.2em;
-    display: flex;
-}
-
-.about-title:after {
-    content: "";
-    display: block;
-    height: 1px;
-    width: 300px;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    margin-left: 20px;
-    margin-top: 35px;
+.count-titles-about::before {
+    content: "01.\00a0";
+    font-size: 0.5em;
+    color: aqua;
 }
 
 .about-content {
@@ -365,6 +353,7 @@ html, body {
 #country {
     color: aqua;
 }
+
 /* END ABOUT PAGE */
 
 /* START SKILLS PAGE */
@@ -429,6 +418,13 @@ html, body {
     flex-grow: 1;
 }
 
+.count-titles-project::before {
+    content: "02.\00a0";
+    font-size: 0.5em;
+    color: aqua;
+    margin-left: 20px;
+}
+
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -439,10 +435,12 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #9b9a9a;
 }
 
 .name-project {
     font-size: 2em;
+    color: #fff;
 }
 
 #projects .btn {
@@ -450,7 +448,7 @@ html, body {
     text-align: center;
     font-size: 1em;
     margin-top: 0.5em;
-    border: 2px solid #979ea5;
+    border: 2px solid aqua;
     background-color: transparent;
 }
 
@@ -459,7 +457,7 @@ html, body {
     min-width: 200px;
     outline: none;
     border-radius: 0px;
-    color: #0E7EF8;
+    color: #fff;
     font-size: 1.5em;
     transition: all 0.3s;
     margin: 0;
@@ -468,7 +466,7 @@ html, body {
 #projects .btn:hover {
     transform: scale(1.1);
     color: #fff;
-    background-color: #0E7EF8;
+    background-color: rgb(0, 66, 66);
 }
 
 /* Change the text and image order when show as column */
@@ -498,7 +496,14 @@ html, body {
     text-align: center;
     letter-spacing: 0.2em;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+.count-titles-contact::before {
+    content: "03.\00a0";
+    font-size: 0.5em;
+    color: aqua;
 }
 
 #contact #lets-talk {
