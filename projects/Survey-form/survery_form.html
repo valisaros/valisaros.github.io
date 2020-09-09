@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" type="text/css" href="survey_form.css">
+
+<div class="container">
+    <header class="header">
+        <h1 id="title">Calisthenics Survey Form</h1>
+        <p id="description"><em>After completing the survey I will make you a custom program</em></p>
+    </header>
+
+    <form id="survey-form">
+        <div class="form-group">
+
+            <label id="name-label" for="name">Name</label>
+            <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-group"
+                placeholder="Enter your name here:"
+                required
+            />
+
+            <label id="email-label" for="email">Email</label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-group"
+                placeholder="Enter your email as well:"
+                required
+            />
+
+            <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+            <input
+               type="number"
+               name="age"
+               id="number"
+               min="10"
+               max="110"
+               class="form-group"
+               placeholder="Also, your age would help me"
+            />
+        </div>
+
+        <div class="form-group">
+            <p>What is your goal?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select your goal</option>
+                <option value="burn-fat">Burn fat</option>
+                <option value="build-muscle">Build muscle</option>
+                <option value="strenght">Strenght</option>
+                <option value="skills">Learn advanced skills</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <p>Would you recommend Calisthenics to a friend?</p>
+            <label>
+                <input
+                   name="user-recommend"
+                   value="definitely"
+                   type="radio"
+                   class="input-radio"
+                   checked
+                />Definitely</label>
+            
+            <label>
+                <input
+                   name="user-recommend"
+                   value="maybe"
+                   type="radio"
+                   class="input-radio"
+                />Maybe</label>
+ 
+            <label>
+                <input
+                   name="user-recommend"
+                   value="not-sure"
+                   type="radio"
+                   class="input-radio"
+                />Not sure</label>
+
+        </div>
+
+        <div class="form-group">
+            <p>What would you like to see improved?
+                <span class="clue">(Check all that apply)</span>
+            </p>
+            
+            <label>
+                <input
+                   name="preffer"
+                   value="the-assistance"
+                   type="checkbox"
+                   class="input-checkbox"
+                />The Assistance</label>
+
+            <label>
+                <input
+                   name="preffer"
+                   value="forum"
+                   type="checkbox"
+                   class="input-checkbox"
+                />Forum</label>
+
+            <label>
+                <input
+                   name="preffer"
+                   value="response-time"
+                   type="checkbox"
+                   class="input-checkbox"
+                />Response time</label>
+
+            <label>
+                <input
+                   name="preffer"
+                   value="the-programs"
+                   type="checkbox"
+                   class="input-checkbox"
+                />The programs</label>
+        </div>
+
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter your comment here..."
+            ></textarea>
+        </div>
+      
+        <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">
+              Submit
+            </button>
+        </div>
+
+    </form>
+</div>
+</html>

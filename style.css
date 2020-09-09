@@ -15,6 +15,7 @@ html, body {
     background-color: #111111;
     position: relative;
     display: block;
+    min-height: 100vh;
 }
 
 /*    #d87093   */
@@ -436,6 +437,7 @@ html, body {
     font-size: 1em;
     text-decoration: none;
 }
+
 #country {
     color: aqua;
 }
@@ -514,12 +516,25 @@ html, body {
     height: auto;
 }
 
+.img-project {
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.img-project:hover {
+    filter: brightness(100%);
+}
 .text-project {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #9b9a9a;
+}
+
+.text-project p {
+    text-align: center;
+    font-size: 1em;
 }
 
 .name-project {
