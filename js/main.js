@@ -24,8 +24,9 @@ const navSlide = () => {
         
         //Burger animation
         burger.classList.toggle('toggle');
+        
         // Disable the fixed position when burger clicked
-        //burger.addEventListener('click', () => {
+        //navLinks.addEventListener('click', () => {
             //body.style.position = '';
         //})
         
