@@ -368,7 +368,7 @@ html, body {
 
 
 .titles {
-    padding-top: 3em;
+    padding-top: 1em;
     color: #ffffff;
     font-size: 2.5em;
     text-align: left;
@@ -399,6 +399,127 @@ html, body {
     }
 }
 
+
+
+/* START PROJECT PAGE */
+#projects {
+    background-color: #111;
+    display: block;
+}
+
+/* Make the flex to wrap when it doesn't fit */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 0;
+    padding: 3.5em 0 1.5em 0;
+}
+
+/* Make the flex to adjust by the container */
+.row > * {
+    flex-basis: calc(calc(800px - 100%) * 999);
+    flex-grow: 1;
+}
+
+.count-titles-project::before {
+    content: "01.\00a0";
+    font-size: 0.5em;
+    color: aqua;
+    margin-left: 20px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-project {
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.img-project:hover {
+    filter: brightness(100%);
+}
+
+.text-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #9b9a9a;
+}
+
+.text-project p {
+    text-align: center;
+    font-size: 1em;
+}
+
+.name-project {
+    font-size: 2em;
+    color: #fff;
+}
+
+.list-inline-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-inline-item > a {
+
+    color: aqua;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 1em 0 1em;
+    font-size: 1em;
+    transition: color 0.5s;
+}
+
+
+.list-inline-item > a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+#projects .btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 0.5em;
+    border: 2px solid aqua;
+    background-color: transparent;
+}
+
+#projects .custom-btn {
+    padding: 0.1em 1em;
+    min-width: 200px;
+    outline: none;
+    border-radius: 0px;
+    color: #fff;
+    font-size: 1.5em;
+    transition: all 0.3s;
+}
+
+#projects .btn:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: rgb(0, 66, 66);
+}
+
+/* Change the text and image order when show as column */
+@media screen and (max-width: 990px) {
+    #projects #a {
+        order: 2;
+    }
+
+    #projects #b {
+        order: 1;
+    }
+}
+/* END PROJECT PAGE */
+
+
 /* START AB0UT PAGE */
 #about {
     background-color: #111;
@@ -406,7 +527,7 @@ html, body {
 }
 
 .count-titles-about::before {
-    content: "01.\00a0";
+    content: "02.\00a0";
     font-size: 0.5em;
     color: aqua;
 }
@@ -482,103 +603,6 @@ html, body {
     color: aqua;
 }
 /* END SKILLS PAGE */
-
-/* START PROJECT PAGE */
-#projects {
-    background-color: #111;
-    display: block;
-}
-
-/* Make the flex to wrap when it doesn't fit */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2em;
-    margin: 0;
-    padding: 5em 0 0 0;
-}
-
-/* Make the flex to adjust by the container */
-.row > * {
-    flex-basis: calc(calc(800px - 100%) * 999);
-    flex-grow: 1;
-}
-
-.count-titles-project::before {
-    content: "02.\00a0";
-    font-size: 0.5em;
-    color: aqua;
-    margin-left: 20px;
-}
-
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-.img-project {
-    filter: brightness(50%);
-    transition: 0.3s;
-}
-
-.img-project:hover {
-    filter: brightness(100%);
-}
-.text-project {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #9b9a9a;
-}
-
-.text-project p {
-    text-align: center;
-    font-size: 1em;
-}
-
-.name-project {
-    font-size: 2em;
-    color: #fff;
-}
-
-#projects .btn {
-    display: inline-block;
-    text-align: center;
-    font-size: 1em;
-    margin-top: 0.5em;
-    border: 2px solid aqua;
-    background-color: transparent;
-}
-
-#projects .custom-btn {
-    padding: 0.1em 1em;
-    min-width: 200px;
-    outline: none;
-    border-radius: 0px;
-    color: #fff;
-    font-size: 1.5em;
-    transition: all 0.3s;
-    margin: 0;
-}
-
-#projects .btn:hover {
-    transform: scale(1.1);
-    color: #fff;
-    background-color: rgb(0, 66, 66);
-}
-
-/* Change the text and image order when show as column */
-@media screen and (max-width: 990px) {
-    #projects #a {
-        order: 2;
-    }
-
-    #projects #b {
-        order: 1;
-    }
-}
-/* END PROJECT PAGE */
 
 
 /* START CONTACT PAGE */
