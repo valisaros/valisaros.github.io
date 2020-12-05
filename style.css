@@ -368,7 +368,6 @@ html, body {
 
 
 .titles {
-    padding-top: 1em;
     color: #ffffff;
     font-size: 2.5em;
     text-align: left;
@@ -548,6 +547,10 @@ html, body {
     align-items: center;
 }
 
+.aboutTitle {
+    padding-top: 1.5em;
+}
+
 .about-text {
     font-size: 1.25em;
     color: #9b9a9a;
@@ -577,6 +580,7 @@ html, body {
     text-align: center;
     letter-spacing: 4px;
     font-weight: 500;
+    padding: 0;
 }
 
 /* Make the flex to wrap when it doesn't fit */
@@ -585,7 +589,7 @@ html, body {
     flex-wrap: wrap;
     gap: 2em;
     margin: 0;
-    padding: 5em 0 0 0; 
+    padding: 3em 0 0 0; 
     justify-content: space-between;
 }
 
