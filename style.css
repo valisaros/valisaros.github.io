@@ -4,6 +4,7 @@ html, body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     font-family: 'Work Sans', sans-serif;
+    background-color:  #111111;
 }
 
 .body::-webkit-scrollbar {
@@ -19,6 +20,17 @@ html, body {
 }
 
 /*    #d87093   */
+
+
+
+/* GRADIENT */
+
+.gradient {
+    background: -webkit-linear-gradient(-30deg,  #69bbff 0%, #d46cab 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 /* Start Nav Bar */
 
@@ -53,7 +65,7 @@ html, body {
 .count::before {
     content: "0" counter(item) ".";
     font-size: 16px;
-    color: aqua;
+    color: #69bbff;
 }
 
 .nav-links li {
@@ -61,7 +73,7 @@ html, body {
 }
 
 #resume a {
-    color:aqua;
+    color:#69bbff;
 }
 
 .nav-zone a {
@@ -78,12 +90,13 @@ html, body {
 
 .nav-links a:hover {
     transition: all 0.3s;
-    color: aqua;
+    color: #69bbff;
 }
 
 .logo a {
     font-size: 2em;
 }
+
 /* Start BURGER MENU */
 .burger {
     display: none;
@@ -188,13 +201,13 @@ html, body {
 }
 
 .nav-link {
-    color: #9b9a9a;
+    color: rgb(255, 255, 255);
     transition: color 0.5s;
     font-size: 1.25em;
 }
 
 .nav-link:hover {
-    color: aqua;
+    color:  #69bbff;
 }
 
 .left-links:after {
@@ -229,7 +242,7 @@ html, body {
 
 .right-mail:hover {
     text-decoration: none;
-    color: aqua;
+    color:  #69bbff;
 }
 
 .right-nav:after {
@@ -295,21 +308,21 @@ html, body {
 
 #hi {
     font-size: 1.5em;
-    color: aqua;
+    color: white;
     font-weight: normal;
     padding-left: 5px;
     margin-bottom: 5px;
 }
 
 .subtitle {
-    color: #9b9a9a;
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 4em;
     margin-bottom: 0.5em;
 }
 
 #mini-text {
-    color: #9b9a9a;
+    color: white;
     font-size: 1.5em;
     margin-bottom: 0.5em;
 }
@@ -334,30 +347,30 @@ html, body {
     }
 }
 
-.page .btn {
+.btn {
     display: inline-block;
     text-align: center;
     font-size: 1em;
     margin-top: 2em;
-    border: 2px solid aqua;
+    border: 2px solid #69bbff !important;
     background-color: transparent;
+    color: white;
 }
 
-.page .custom-btn {
+.custom-btn {
     padding: 0.1em 1em;
     min-width: 150px;
     outline: none;
     border-radius: 3px;
-    color: aqua;
     font-size: 1em;
     transition: all 0.3s;
     padding: 0.5em 0.5em;
 }
 
-.page .btn:hover {
+.btn:hover {
     transform: scale(1.1);
     color: #fff;
-    background-color: rgb(0, 66, 66);
+    background-color: #1d3d5a;
 
 }
 
@@ -368,7 +381,8 @@ html, body {
 
 .titles {
     color: #ffffff;
-    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5vw;
     text-align: left;
     display: flex;
     font-weight: 600;
@@ -423,7 +437,7 @@ html, body {
 .count-titles-project::before {
     content: "01.\00a0";
     font-size: 0.5em;
-    color: aqua;
+    color: #69bbff;
     margin-left: 20px;
 }
 
@@ -465,8 +479,7 @@ html, body {
 }
 
 .list-inline-item > a {
-
-    color: aqua;
+    color:  #69bbff;
     text-decoration: none;
     text-align: center;
     padding: 0 1em 0 1em;
@@ -485,7 +498,7 @@ html, body {
     text-align: center;
     font-size: 1em;
     margin-top: 0.5em;
-    border: 2px solid aqua;
+    border: 2px solid #69bbff;
     background-color: transparent;
 }
 
@@ -502,7 +515,7 @@ html, body {
 #projects .btn:hover {
     transform: scale(1.1);
     color: #fff;
-    background-color: rgb(0, 66, 66);
+    background-color:#1d3d5a;
 }
 
 /* Change the text and image order when show as column */
@@ -518,6 +531,180 @@ html, body {
 /* END PROJECT PAGE */
 
 
+
+
+
+
+
+
+
+/* ------------------------------------- SLIDER ---------------------------- */
+
+
+#slider {
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 80vw;
+    max-width: 100%;
+    text-align: center;
+    background-color:  #111111;
+}
+
+#slider input[type=radio] {
+    display: none;
+}
+
+#slider label {
+    cursor:pointer;
+    text-decoration: none;
+}
+
+#slides {
+    padding: 10px;
+    /* border: 3px solid #ccc; */
+    position: relative;
+    z-index: 1;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1:checked ~ #slides .inner {
+    margin-left: 0;
+}
+
+#slide2:checked ~ #slides .inner {
+    margin-left: -100%;
+}
+
+#slide3:checked ~ #slides .inner {
+    margin-left: -200%;
+}
+
+#slide4:checked ~ #slides .inner {
+    margin-left: -300%;
+}
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    line-height: 0;
+    height: 300px;
+}
+
+#slides .slide {
+    width: 25%;
+    float:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: #fff;
+}
+
+#controls {
+    margin: -180px 0 0 0;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+#controls label {
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+    color: #fff;
+}
+
+ #controls label:hover {
+    opacity: 1;
+}
+
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+    float:right;
+    margin: 0 -50px 0 0;
+    display: block;
+}
+
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+    background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+    float:left;
+    margin: 0 0 0 -50px;
+    display: block;
+}
+
+#bullets {
+    margin: 150px 0 0;
+    text-align: center;
+}
+
+ #bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius:100%;
+    background: #ccc;
+    margin: 0 10px;
+}
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+    background: #69bbff;
+}
+
+@media screen and (max-width: 900px) {
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(1),
+    #slide1:checked ~ #controls label:nth-last-child(2),
+    #slide2:checked ~ #controls label:nth-last-child(3),
+    #slide3:checked ~ #controls label:nth-last-child(4),
+    #slide4:checked ~ #controls label:nth-last-child(1) {
+       margin: 0;
+    }
+    #slides {
+       max-width: calc(100% - 140px);
+       margin: 0 auto;
+    }
+}
+
+
+/* ------------------------------------- END SLIDER ---------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* START AB0UT PAGE */
 #about {
     background-color: #111;
@@ -527,7 +714,7 @@ html, body {
 .count-titles-about::before {
     content: "02.\00a0";
     font-size: 0.5em;
-    color: aqua;
+    color: #69bbff;
 }
 
 .about-content {
@@ -556,13 +743,13 @@ html, body {
 }
 
 .about-text a{
-    color: aqua;
+    color:  #69bbff;
     font-size: 1em;
     text-decoration: none;
 }
 
 #country {
-    color: aqua;
+    color: #69bbff;
 }
 
 /* END ABOUT PAGE */
@@ -603,7 +790,7 @@ html, body {
 
 #skills .row h2 {
     padding-bottom: 1em;
-    color: aqua;
+    color:  #69bbff;
 }
 /* END SKILLS PAGE */
 
@@ -637,7 +824,7 @@ html, body {
 .count-titles-contact::before {
     content: "03.\00a0";
     font-size: 0.5em;
-    color: aqua;
+    color:  #69bbff;
 }
 
 #contact #lets-talk {
@@ -670,7 +857,7 @@ html, body {
 #contact .btn {
     color: #fff;
     margin-top: 0.25em;
-    border: 2px solid aqua;
+    border: 2px solid  #69bbff;
 }
 
 #contact .custom-btn {
@@ -684,11 +871,6 @@ html, body {
     margin: 0;
 }
 
-#contact .btn:hover {
-    transform: scale(1.1);
-    color: #fff;
-    background-color: rgb(0, 66, 66);
-}
 
 /* FOOTER START */
 #copyright {
@@ -703,7 +885,7 @@ html, body {
     list-style: none;
     margin: 0;
     padding: 0;
-    color: aqua;
+    color:  #69bbff;
 }
 
 
@@ -716,7 +898,7 @@ html, body {
 
 .copyright-text:hover{
     text-decoration: none;
-    color: aqua;
+    color:  #69bbff;
 }
 
 #copyright .nav-link {
@@ -726,7 +908,7 @@ html, body {
 }
 
 #copyright .nav-link:hover {
-    color: aqua;
+    color:  #69bbff;
 }
 
 /* Make the footer links appear when less than 1080px */
