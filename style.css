@@ -121,18 +121,18 @@ html, body {
 
     .nav-links {
         position: absolute;
-        right: 0px;
-        height: 100%;
-        top: 0vh;
         display: flex;
         flex-direction: column;
         background-color: #000;
-        opacity: 0.95;
         align-items: center;
-        width: 100%;
         transform: translateX(100%);
         transition: transform 0.5 ease-in;
         position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 500px;
+        z-index: 10;
     }
 
     .count::before {
@@ -151,11 +151,21 @@ html, body {
         display: block;
         cursor: pointer;
         position: "";
+        z-index: 10;
+        right: 2em;
     }
 
     .logo a {
         font-size: 2.5em;
     }
+
+    /* .link1 .link3 {
+        margin-left: 120px !important;
+    }
+
+    .link2 .link4 {
+        margin-left: 40px !important;
+    } */
 }
 
 .nav-active {
