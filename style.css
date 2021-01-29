@@ -539,6 +539,14 @@ html, body {
     background-color:#1d3d5a;
 }
 
+.cali-link {
+    cursor: default;
+}
+
+.cali-btn {
+    cursor: default !important;
+}
+
 /* Change the text and image order when show as column */
 @media screen and (max-width: 990px) {
     #projects #a {
@@ -548,14 +556,15 @@ html, body {
     #projects #b {
         order: 1;
     }
+
+    .name-project {
+        margin-top: 2.5vw;
+    }
 }
+
+
+
 /* END PROJECT PAGE */
-
-
-
-
-
-
 
 
 
@@ -565,10 +574,18 @@ html, body {
 #slider {
     margin: 0 auto;
     padding: 0 auto;
-    width: 80vw;
+    margin-top: 10vh;
+    margin-bottom: 2vh;
+    width: 100%;
     max-width: 100%;
     text-align: center;
     background-color:  #111111;
+}
+
+.testimonials__title {
+    font-weight: bold;
+    color: #69bbff;
+    font-size: 40px;
 }
 
 #slider input[type=radio] {
@@ -585,6 +602,15 @@ html, body {
     /* border: 3px solid #ccc; */
     position: relative;
     z-index: 1;
+}
+
+.slide-content h3 {
+    font-size: 30px;
+}
+
+.slide-content p {
+    margin-top: 25px;
+    font-size: 15px;
 }
 
 #overflow {
@@ -642,7 +668,7 @@ html, body {
     color: #fff;
 }
 
- #controls label:hover {
+#controls label:hover {
     opacity: 1;
 }
 
@@ -667,7 +693,7 @@ html, body {
 }
 
 #bullets {
-    margin: 150px 0 0;
+    margin: 5px 0 0;
     text-align: center;
 }
 
@@ -697,12 +723,30 @@ html, body {
     #slide4:checked ~ #controls label:nth-last-child(1) {
        margin: 0;
     }
-    #slides {
+    /* #slides {
        max-width: calc(100% - 140px);
        margin: 0 auto;
-    }
+    } */
 }
 
+@media screen and (max-width: 600px) {
+    .slider {
+        margin-top: 1vh;
+        margin-bottom: 1vh;
+    }
+
+    .testimonials__title {
+        font-size: 30px;
+    }
+
+    .slide-content h3 {
+        font-size: 25px;
+    }
+    
+    .slide-content p {
+        font-size: 15px;
+    }
+}
 
 /* ------------------------------------- END SLIDER ---------------------------- */
 
