@@ -21,7 +21,11 @@ html, body {
 
 /*    #d87093   */
 
-
+@media screen and (max-width: 800px) {
+    .page {
+        min-height: unset;
+    }
+}
 
 /* GRADIENT */
 
@@ -170,6 +174,12 @@ html, body {
 
 .nav-active {
     transform: translateX(0%);
+}
+
+@media screen and (max-width: 600px) {
+    .nav-links {
+        width: 80vw;
+    }
 }
 /* End BURGER MENU
 
@@ -569,6 +579,10 @@ html, body {
 
     .name-project {
         margin-top: 2.5vw;
+    }
+
+    .name-project {
+        font-size: 2em;
     }
 }
 
