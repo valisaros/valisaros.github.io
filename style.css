@@ -343,6 +343,10 @@ html, body {
         margin-bottom: 10px;
     }
 
+    #mini-text {
+        font-size: 1em;
+    }
+
     .logo a {
         padding-left: 0;
     }
@@ -389,7 +393,7 @@ html, body {
 .titles {
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    font-size: 2.5vw;
+    font-size: 45px;
     text-align: left;
     display: flex;
     font-weight: 600;
@@ -410,15 +414,23 @@ html, body {
 
 @media screen and (max-width: 1020px) {
     .titles {
-        font-size: 2em;
+        font-size: 45px;
     }
 
     .titles::after {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 }
 
+@media screen and (max-width: 720px) {
+    .titles {
+        font-size: 35px;
+    }
 
+    .titles::after {
+        margin-top: 25px;
+    }
+}
 
 /* START PROJECT PAGE */
 #projects {
@@ -767,14 +779,30 @@ html, body {
     display: block;
 }
 
-.skills-text{
+.skills-text {
     color: #fff;
-    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
     text-align: center;
-    letter-spacing: 4px;
-    font-weight: 500;
-    padding: 0;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 1px;
 }
+
+
+@media screen and (max-width: 720px) {
+    .skills-text {
+        font-size: 35px;
+    }
+}
+
+
+
+
+
+
+
+
 
 /* Make the flex to wrap when it doesn't fit */
 #skills .row {
@@ -819,14 +847,40 @@ html, body {
 
 .contact-title {
     color: #fff;
-    font-size: 3.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-weight: 800;
     margin: 0;
+    letter-spacing: 1px;
 }
+
+
+
+.skills-text {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+
+@media screen and (max-width: 720px) {  
+    .contact-title {
+        font-size: 35px;
+    }
+}
+
+
+
+
+
 
 .count-titles-contact::before {
     content: "03.\00a0";
