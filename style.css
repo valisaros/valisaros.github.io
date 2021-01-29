@@ -727,6 +727,9 @@ html, body {
        max-width: calc(100% - 140px);
        margin: 0 auto;
     } */
+    .bullets {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -746,27 +749,11 @@ html, body {
     .slide-content p {
         font-size: 15px;
     }
+
+    
 }
 
 /* ------------------------------------- END SLIDER ---------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
