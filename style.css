@@ -4,7 +4,7 @@ html, body {
     -ms-overflow-style: none;
     scrollbar-width: none;
     font-family: 'Work Sans', sans-serif;
-    background-color:  #111111;
+    background-color: rgb(8, 8, 8);
 }
 
 .body::-webkit-scrollbar {
@@ -12,8 +12,11 @@ html, body {
   }
 
 /* START HOME PAGE */
+
+/* background-color: rgb(16, 17, 19); */
+
 .page {
-    background-color: #111111;
+    background-color: rgb(8, 8, 8);
     position: relative;
     display: block;
     min-height: 100vh;
@@ -458,7 +461,7 @@ html, body {
 
 /* START PROJECT PAGE */
 #projects {
-    background-color: #111;
+    background-color: rgb(8, 8, 8);
     display: block;
 }
 
@@ -607,7 +610,7 @@ html, body {
     width: 100%;
     max-width: 100%;
     text-align: center;
-    background-color:  #111111;
+    background-color: rgb(8, 8, 8);
 }
 
 .testimonials__title {
@@ -787,7 +790,7 @@ html, body {
 
 /* START AB0UT PAGE */
 #about {
-    background-color: #111;
+    background-color: rgb(8, 8, 8);
     display: block;
 }
 
@@ -836,7 +839,7 @@ html, body {
 
 /* START SKILLS PAGE */
 #skills {
-    background-color: #111;
+    background-color: rgb(8, 8, 8);
     display: block;
 }
 
@@ -893,7 +896,7 @@ html, body {
 
 /* START CONTACT PAGE */
 #contact {
-    background-color: #111;
+    background-color: rgb(8, 8, 8);
     display: flex;
 }
 
@@ -979,7 +982,7 @@ html, body {
 
 /* FOOTER START */
 #copyright {
-    background-color: #111;
+    background-color: rgb(8, 8, 8);
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
