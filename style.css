@@ -318,7 +318,7 @@ html, body {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 4em;
-    margin-bottom: 0.5em;
+    margin-bottom: 2vh;
 }
 
 #mini-text {
@@ -335,11 +335,12 @@ html, body {
 
     .title {
         font-size: 3em;
+        margin-bottom: 5px;
     }
 
     .subtitle {
         font-size: 2em;
-        margin-bottom: 1em;
+        margin-bottom: 10px;
     }
 
     .logo a {
@@ -347,11 +348,12 @@ html, body {
     }
 }
 
+
 .btn {
     display: inline-block;
     text-align: center;
     font-size: 1em;
-    margin-top: 2em;
+    margin-top: 4vh;
     border: 2px solid #69bbff !important;
     background-color: transparent;
     color: white;
@@ -374,6 +376,11 @@ html, body {
 
 }
 
+@media screen and (max-width: 720px) {
+    .btn {
+        margin-top: 3vh;
+    }
+}
 
 /* End Jumbotron */
 /* END HOME PAGE */
