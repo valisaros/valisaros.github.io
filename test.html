@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style >
+        html, body {
+    margin: 0;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    font-family: 'Work Sans', sans-serif;
+    background-color: rgb(8, 8, 8);
+}
+
+.body::-webkit-scrollbar {
+    display: none;
+  }
+
+/* START HOME PAGE */
+
+/* background-color: rgb(16, 17, 19); */
+
+.page {
+    background-color: rgb(8, 8, 8);
+    position: relative;
+    display: block;
+    min-height: 100vh;
+}
+
+/*    #d87093   */
+
+@media screen and (max-width: 800px) {
+    .page {
+        min-height: unset;
+    }
+}
+
+/* GRADIENT */
+
+.gradient {
+    background: -webkit-linear-gradient(-30deg,  #69bbff 0%, #d46cab 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Start Nav Bar */
+
+.bad-script-font {
+    letter-spacing: 3px;
+    font-family: 'Cormorant Garamond', serif;
+    /* Cutive Mono */
+}
+
+.nav-zone {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    height: 12.5vh;
+    padding: 0em 4em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    font-size: 0.7em;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+} 
+
+.count {
+    counter-increment: item 1;
+}
+
+.count::before {
+    content: "0" counter(item) ".";
+    font-size: 16px;
+    color: #69bbff;
+}
+
+.nav-links li {
+    padding: 20px;
+}
+
+#resume a {
+    color:#69bbff;
+}
+
+.nav-zone a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 12px 10px;
+}
+
+.nav-zone .logo a:hover {
+    color:#fff;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    transition: all 0.3s;
+    color: #69bbff;
+}
+
+.logo a {
+    font-size: 2em;
+}
+
+/* Start BURGER MENU */
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-zone {
+        padding: 0em 2em;
+    }
+
+    .nav-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5 ease-in;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 500px;
+        z-index: 10;
+    }
+
+    .count::before {
+        font-size: 2.5em;
+    }
+
+    .nav-links a {
+        font-size: 3.5em;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+        position: "";
+        z-index: 10;
+        right: 2em;
+    }
+
+    .logo a {
+        font-size: 2.5em;
+    }
+
+    /* .link1 .link3 {
+        margin-left: 120px !important;
+    }
+
+    .link2 .link4 {
+        margin-left: 40px !important;
+    } */
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@media screen and (max-width: 600px) {
+    .nav-links {
+        width: 80vw;
+    }
+
+    .nav-links a {
+        font-size: 2.5em;
+    }
+}
+/* End BURGER MENU
+
+/* Start Nav Burger Animation */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-6px, 6.5px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-6px, -6.5px);
+}
+/* End Nav Burger Animation */
+/* End Nav Bar */
+
+/* Start side nav links */
+.left-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    position: fixed;
+    justify-content: center;
+    bottom: 0px;
+    left: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #fff;
+    transition: color 0.5s;
+    font-size: 1.25em;
+}
+
+.nav-link:hover {
+    color:  #69bbff;
+}
+
+.left-links:after {
+    content: "";
+    display: block;
+    height: 150px;
+    width: 1px;
+    background-color: #fff;
+    position: relative;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+/* End side nav links */
+
+/* Start right mail */
+.right-nav {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    left: auto;
+    right: 40px;
+}
+
+.right-mail {
+    writing-mode: vertical-rl;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 1px;
+    transition: color 0.5s;
+}
+
+.right-mail:hover {
+    text-decoration: none;
+    color:  #69bbff;
+}
+
+.right-nav:after {
+    content: "";
+    display: block;
+    height: 150px;
+    width: 1px;
+    background-color: #fff;
+    position: relative;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+/* End right mail */
+
+/* Make the side nav display none on smaller screens */
+@media screen and (max-width: 1420px) {
+    .left-links {
+        display: none;
+    }
+
+    .right-nav {
+        display: none;
+    }
+}
+/* End side nav responsive */
+
+
+.container {
+    padding-bottom: 8em; 
+}
+
+/* Start Jumbotron */
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    justify-content: space-around;
+    align-self: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 10em;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .jumbotron {
+        margin-top: 7em;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .jumbotron {
+        margin-top: 3em;
+    }
+}
+
+.title {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5em;
+    margin-bottom: 10px;
+}
+
+#hi {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: normal;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4em;
+    margin-bottom: 2vh;
+}
+
+#mini-text {
+    color: #fff;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 720px) {
+    #hi {
+        font-size: 1em;
+        margin-bottom: 3px;
+    }
+
+    .title {
+        font-size: 3em;
+        margin-bottom: 5px;
+    }
+
+    .subtitle {
+        font-size: 2em;
+        margin-bottom: 10px;
+    }
+
+    #mini-text {
+        font-size: 1.25em;
+    }
+
+    .logo a {
+        padding-left: 0;
+    }
+}
+
+
+.btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 4vh;
+    border: 2px solid #69bbff !important;
+    background-color: transparent;
+    color: #fff;
+}
+
+.custom-btn {
+    padding: 0.1em 1em;
+    min-width: 150px;
+    outline: none;
+    border-radius: 3px;
+    font-size: 1em;
+    transition: all 0.3s;
+    padding: 0.5em 0.5em;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    color: #fff;
+    background-color: #1d3d5a;
+
+}
+
+@media screen and (max-width: 720px) {
+    .btn {
+        margin-top: 3vh;
+    }
+}
+
+/* End Jumbotron */
+/* END HOME PAGE */
+    </style>
+
+  <!-- META TAGS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Romania-Based Full Stack Web Developer focusing on creating amazing web experiences that help your business to grow.">
+  <meta name="keywords"
+    content="Romania, Full Stack Developer, Front-End Web Developer, Back-End Developer, JavaScript,Bootstrap 4, MySQL, Valeriu Saros">
+  <meta name="author" content="Valeriu Alexandru Saros">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="./bootstrap-4.5.2/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./js/aos/aos.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Valeriu Saros - Full Stack Developer</title>
+</head>
+
+
+
+<body>
+  <!-------------------------------------------------------- Start Home ----------------------------------------------------------->
+  <main class="page">
+    <!------------------------ Menu ------------------------->
+    <nav class="nav-zone">
+      <div class="logo">
+        <a class="logo bad-script-font" href="https://valisaros.github.io">Vali Saros</a>
+      </div>
+      <ol class="nav-links">
+        <li class="count link1">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="count link2">
+          <a href="#about">About</a>
+        </li>
+        <li class="count link3">
+          <a href="#contact">Contact Me</a>
+        </li>
+        <span id="resume" class="link4">
+          <li class="gradient"><a href="./resume/valisaros-resume.pdf">Resume</a></li>
+        </span>
+      </ol>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <div class="left-nav">
+      <ul class="left-links" data-aos="slide-up" data-aos-duration="1000">
+        <li>
+          <a class="nav-link" href="https://github.com/valisaros" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="https://www.linkedin.com/in/valisaros" target="_blank">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="https://www.instagram.com/valisaros/" target="_blank">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="https://www.youtube.com/channel/UCw7JMLrOtxGSzUQa_6CzKPA" target="_blank">
+            <i class="fa fa-youtube-play"></i>
+          </a>
+        </li>
+        </li>
+      </ul>
+    </div>
+    <div class="right-nav" data-aos="slide-up" data-aos-duration="1000">
+      <a class="right-mail" href="mailto:valeriu.saros@yahoo.com" target="_blank">valeriu.saros@yahoo.com</a>
+    </div>
+    <!-------------------------- End Menu ----------------------->
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+      <div class="jumbotron">
+        <p id="hi">Hi, my name is</p>
+        <br>
+        <h1 class="title gradient"><b>Saros Valeriu.</b></h1>
+        <br>
+        <h2 class="subtitle">Full-Stack Web Developer</h2>
+        <p id="mini-text">
+          & Calisthenics Athlete based in Romania.
+          <br>
+          I build things for the web.
+          <br>
+          <a class="btn custom-btn" href="#contact" role="button">Get In Touch</a>
+        </p>
+      </div>
+    </div>
+  </main>
+  <!------------------------------------------------------------- End Home ---------------------------------------------->
+</body>
+
+</html>
