@@ -636,7 +636,7 @@ html, body {
 }
 
 .slide-content h3 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .slide-content p {
@@ -743,6 +743,12 @@ html, body {
     background: #69bbff;
 }
 
+@media screen and (max-width: 990px) {
+    .slide-content h3 {
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     #slide1:checked ~ #controls label:nth-child(2),
     #slide2:checked ~ #controls label:nth-child(3),
@@ -774,7 +780,7 @@ html, body {
     }
 
     .slide-content h3 {
-        font-size: 25px;
+        font-size: 20px;
     }
     
     .slide-content p {
