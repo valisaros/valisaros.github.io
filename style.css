@@ -837,6 +837,14 @@ html, body {
     text-decoration: none;
 }
 
+.upwork {
+    text-decoration: underline !important;
+}
+
+.bold {
+    font-weight: bold !important;
+}
+
 #country {
     color: #69bbff;
 }
