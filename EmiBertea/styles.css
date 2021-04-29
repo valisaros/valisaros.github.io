@@ -466,6 +466,7 @@ a {
 .first-row {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10vh;
 }
 
 .second-row {
@@ -757,6 +758,7 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 0;
     }
 
     .second-row {
