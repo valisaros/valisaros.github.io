@@ -1,3 +1,5 @@
+
+  
 const navSlide = () => {
     const burger = document.querySelector('.burger');
     const menuItem = document.querySelectorAll(".navbar-link");
@@ -14,14 +16,19 @@ const navSlide = () => {
         burger.classList.toggle('toggle');
     });
 
-    menuItem.addEventListener('click', () => {
-        nav.classList.toggle('nav-active');
+    // Add an EventListener to every item/link
+    Array.from(menuItem).forEach(item => {
+        item.addEventListener("click", function() {
+          nav.classList.toggle('nav-active');
 
-        burger.style.position = '';
+          burger.style.position = '';
+  
+          //Burger animation
+          burger.classList.toggle('toggle');
+        });
+      });
 
-        //Burger animation
-        burger.classList.toggle('toggle');
-    });
 }
 
 navSlide();
+
