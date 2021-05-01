@@ -1,0 +1,695 @@
+@font-face {
+    font-family: AndersonGrotesk;
+    src: url("fonts/GRIFTER+Bold.otf") format("opentype");
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: AndersonGrotesk,sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    --text-color: #ffffff;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.title {
+    font-size: 3.75vw;
+    font-family: inherit;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.small-title {
+    font-size: 3vw;
+    font-family: inherit;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.text {
+    font-size: 1.25vw;
+    font-family: inherit;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.small-text {
+    font-size: 0.9vw;
+    font-family: inherit;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.nav-text {
+    font-size: 1vw !important;
+    text-transform: uppercase;
+}
+
+
+.container {
+    width: 100%;
+    padding-right: 4.5vw;
+    padding-left: 4.5vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.nav-container {
+    width: 100%;
+    padding-right: 4.5vw;
+    padding-left: 4.5vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+ /* Start Nav Bar */
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    min-height: 150px;
+    height: 10vh;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+}
+
+.logo p {
+    margin-left: 10px;
+}
+
+.logo-img {
+    object-fit: contain;
+    width: 100%;
+    max-width: 135px;
+    height: 100%;
+    max-height: 135px;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-link {
+    font-family: inherit;
+    color: var(--text-color);
+    font-weight: 400;
+    list-style: none;
+}
+
+.navbar-link a {
+    margin-left: 1.5vw;
+    position: relative;
+}
+
+.navbar-link a::before {
+    content: ''; 
+    position: absolute; 
+    width: 100%; 
+    height: 2px;
+    transform: scaleX(0); 
+    background-color: #ffffff;
+    bottom: -5px;
+    left: 0; 
+    transform-origin: bottom right; 
+    transition: transform 0.3s ease-out;
+}
+
+.navbar-link a:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Start BURGER MENU */
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    margin: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1080px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #000;
+        transform: translateX(100%);
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 100vw;
+        z-index: 10;
+        justify-content: center;
+        transition: all 800ms cubic-bezier(1, 0, 0.68, 1) !important;
+    }
+
+    .navbar-links a {
+        font-size: 4vw;
+        text-transform: uppercase;
+    }
+
+    .navbar-links li {
+        margin: 17.5px 20vw;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        z-index: 10;
+        right: 2em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .navbar-links {
+        width: 100vw;
+    }
+
+    .navbar-links a {
+        font-size: 6vw;
+    }
+
+    .navbar-links li {
+        margin: 17.5px 25vw;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+/* End BURGER MENU
+
+
+/* Start Nav Burger Animation */
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+/* End Nav Burger Animation */
+/* End Nav Bar */
+
+
+
+
+#home {
+    background-image: url(/assets/Background.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+}
+
+.home-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center-text {
+    height: 200px;
+    max-height: 250px;
+    position: relative;
+    margin-top: 40vh;
+    margin-left: 1.5vw;
+}
+
+
+.rominimal-home {
+    font-size: 7.8vw;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: inherit;
+    margin-top: 0;
+}
+
+.rominimal-home::after {
+    content: "ROMINIMAL";
+    font-size: 7.8vw;
+    color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: inherit;
+    margin-top: 0vh;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #ffffff;
+    opacity: 25%;
+    position: absolute;
+    top: 5vh;
+    left: 0;
+}
+
+.rominimal-home::before {
+    content: "ROMINIMAL";
+    font-size: 7.8vw;
+    color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: inherit;
+    margin-top: 0vh;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #ffffff;
+    opacity: 12.5%;
+    position: absolute;
+    top: 10vh;
+    left: 0;
+}
+
+
+/* left line */
+.left::before {
+    content: "";
+    display: block;
+    height: 50vh;
+    width: 1px;
+    background-color: #fff;
+    position: relative;
+    margin-left: 0.6vw;
+    margin-top: 20vh;
+    bottom: 0vh;
+}
+
+.plus {
+    display: inline;
+    font-size: 40px;
+    /* margin-left: 2.9vw; */
+}
+/* End left line */
+
+/* Right */
+.right::before {
+    content: "SCROLL";
+    display: block;
+    position: relative;
+    margin-top: 70vh;
+    bottom: 0vh;
+}
+/* End Right */
+
+.rominimal-div {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    position: relative;
+}
+
+.rominimal {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rominimal h2 {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 2vw;
+    text-align: center;
+    /* Starting position */
+    transform:translateX(0%);
+    /* Apply animation to this element */
+    animation: scroll-right 125s linear infinite;
+}
+
+/* Move it (define the animation) */
+@keyframes scroll-right{
+ 0%   {
+ transform: translateX(-100%); 		
+ }
+ 100% {
+ transform: translateX(100%); 
+ }
+}
+
+
+
+
+#about {
+    display: flex;
+    margin-top: 20vh;
+}
+
+.first-row {
+    display: flex;
+    flex: 0.5;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.second-row {
+    display: flex;
+    flex: 0.5;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-row p {
+    max-width: 600px;
+    margin-bottom: 20vh;
+}
+
+.artist-img__div {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Slow-motion Zoom Container */
+.artist-img__div img {
+    transition: transform 0.5s ease-in-out;
+}
+  
+  /* The Transformation */
+.artist-img__div:hover img {
+    transform: scale(1.025);
+}
+
+
+.align-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.artist-img {
+    object-fit: contain;
+    width: 100%;
+    max-width: 550px;
+    height: 100%;
+    max-height: 800px;
+}
+
+
+
+
+
+
+/* Make website responsive */
+@media (max-width: 1600px) {
+    .title {
+        font-size: 4vw;
+    }
+    
+    .small-title {
+        font-size: 3.25vw;
+    }
+
+    .text {
+        font-size: 1.5vw;
+    }
+    
+    .small-text {
+        font-size: 1vw;
+    }
+
+    .nav-text {
+        font-size: 1.15vw !important;
+    }
+
+    .rominimal-home {
+        font-size: 8vw;
+    }
+    
+    .rominimal-home::after {
+        font-size: 8vw;
+    }
+    
+    .rominimal-home::before {
+        font-size: 8vw;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .title {
+        font-size: 4.15vw;
+    }
+
+    .small-title {
+        font-size: 3.50vw;
+    }
+    
+    .text {
+        font-size: 1.65vw;
+    }
+    
+    .small-text {
+        font-size: 1.15vw;
+    }
+
+    .nav-text {
+        font-size: 1.25vw !important;
+    }
+
+    .logo-img {
+        width: 100%;
+        max-width: 130px;
+        height: auto;
+        max-height: 130px;
+    }
+
+    .first-row {
+        margin-right: 5vw;
+    }
+
+    .second-row {
+        margin-left: 5vw;
+    }
+
+    .artist-img {
+        max-width: 450px;
+        max-height: 700px;
+    }
+
+}
+
+@media (max-width: 1080px) {
+    .left::before {
+        display: none;
+    }
+
+    .plus {
+        display: none;
+    }
+
+    .right::before {
+        display: none;
+    }
+
+    .center-text {
+        margin-left: 0;
+    }
+
+    .rominimal-home {
+        font-size: 11vw;
+    }
+    
+    .rominimal-home::after {
+        font-size: 11vw;
+        -webkit-text-stroke-width: 3px;
+    }
+    
+    .rominimal-home::before {
+        font-size: 11vw;
+        -webkit-text-stroke-width: 3px;
+    }
+
+    .rominimal h2 {
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    .rominimal-home {
+        font-size: 11vw;
+        top: 0;
+    }
+    
+    .rominimal-home::after {
+        font-size: 11vw;
+        top: 3vh;
+    }
+    
+    .rominimal-home::before {
+        font-size: 11vw;
+        top: 6vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .title {
+        font-size: 8.00vw;
+    }
+
+    .small-title {
+        font-size: 6.00vw;
+    }
+    
+    .text {
+        font-size: 2.00vw;
+    }
+    
+    .small-text {
+        font-size: 1.50vw;
+    }
+
+    .nav-text {
+        font-size: 2.50vw !important;
+    }
+
+    .navbar {
+        min-height: 125px;
+    }
+
+    .rominimal-home {
+        font-size: 15vw;
+    }
+    
+    .rominimal-home::after {
+        font-size: 15vw;
+        -webkit-text-stroke-width: 2px;
+    }
+    
+    .rominimal-home::before {
+        font-size: 15vw;
+        -webkit-text-stroke-width: 2px;
+    }
+
+    .logo-img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+
+    .rominimal {
+        height: 70px;
+    }
+
+    .rominimal h2 {
+        font-size: 5vw;
+    }
+
+    .rominimal-div {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    #about {
+        flex-direction: column-reverse;
+        margin-top: 15vh;
+    }
+
+    .first-row {
+        margin: 0;
+        margin-top: 5vh;
+    }
+
+    .second-row {
+        margin: 0;
+    }
+
+    .align-start {
+        align-items: center;
+    }
+
+    .align-start > p {
+        text-align: center;
+    }
+
+    .second-row p {
+        margin-bottom: 5vh;
+    }
+    
+}
+
+@media (max-width: 500px) {
+    .title {
+        font-size: 10.00vw;
+    }
+
+    .small-title {
+        font-size: 8.00vw;
+    }
+    
+    .text {
+        font-size: 4.00vw;
+    }
+    
+    .small-text {
+        font-size: 3.00vw;
+    }
+
+    .nav-text {
+        font-size: 4.50vw !important;
+    }
+
+    .center-text {
+        /* margin-top: 7.5vh; */
+        margin-top: 50vh;
+    }
+}
