@@ -2,256 +2,443 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emi Bertea</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+  <!-- META TAGS -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Romania-Based Full Stack Web Developer focusing on creating amazing web experiences that help your business to grow.">
+  <meta name="keywords"
+    content="Romania, Full Stack Developer, Front-End Web Developer, Back-End Developer, JavaScript,Bootstrap 4, MySQL, Valeriu Saros">
+  <meta name="author" content="Valeriu Alexandru Saros">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="./bootstrap-4.5.2/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="./js/aos/aos.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Valeriu Saros - Full Stack Developer</title>
 </head>
 
-<body id="home">
-    <nav class="navbar nav-container">
-        <div class="logo">
-            <a href="">
-                <img class="logo-img" src="./assets/logo/Logo_v2.jpg" alt="Emi Bertea Logo">
-                <p class="text">Emi <br> Bertea</p>
-            </a>
-        </div>
-        <div class="navbar-links__div">
-            <ul class="navbar-links">
-                <li class="navbar-link nav-text">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="navbar-link nav-text">
-                    <a href="#services">Services</a>
-                </li>
-                <li class="navbar-link nav-text">
-                    <a href="#team">Barbers</a>
-                </li>
-                <li class="navbar-link nav-text">
-                    <a href="#contacts">Contacts</a>
-                </li>
-            </ul>
-        </div>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
+<body>
+  <!-------------------------------------------------------- Start Home ----------------------------------------------------------->
+  <main class="page">
+    <!------------------------ Menu ------------------------->
+    <nav class="nav-zone">
+      <div class="logo">
+        <a class="logo bad-script-font" href="https://valisaros.github.io">Vali Saros</a>
+      </div>
+      <ol class="nav-links">
+        <li class="count link1">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="count link2">
+          <a href="#about">About</a>
+        </li>
+        <li class="count link3">
+          <a href="#contact">Contact Me</a>
+        </li>
+        <span id="resume" class="link4">
+          <li class="gradient"><a href="./resume/valisaros-resume.pdf">Resume</a></li>
+        </span>
+      </ol>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </nav>
-    <section class="container" id="home-section">
-        <div class="home-texts">
-            <div class="home-text">
-                <h2 class="text">Not your usual barbers</h2>
-                <h1 class="title">Premium Mens <br> Grooming</h1>
-                <div class="book-appointment__div">
-                    <a
-                        href="https://booksy.com/en-gb/47040_emi-bertea-barbershop-academy_barber-shop_25535_united-kingdom">
-                        <h2 class="text book-appointment">Book an appointment</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="review">
-                <div class="rating">
-                    <div class="score">
-                        <p class="text">5.0/5</p>
-                    </div>
-                    <div class="stars">
-                        <img src="./assets/star/Star.png" alt="review star">
-                        <img src="./assets/star/Star.png" alt="review star">
-                        <img src="./assets/star/Star.png" alt="review star">
-                        <img src="./assets/star/Star.png" alt="review star">
-                        <img src="./assets/star/Star.png" alt="review star">
-                    </div>
-                </div>
-                <div class="reviews-number">
-                    <p class="small-text">Over 150 reviews</p>
-                </div>
-            </div>
-        </div>
-        <div class="home-img__div">
-            <img class="home-img" src="./assets/barbers/barbers.jpg" width="700px" height="850px"
-                alt="Emi Bertea with his team">
-            <p class="text">Quality not quantity</p>
-        </div>
-    </section>
-    <section class="container">
-        <div class="video-div">
-            <video autoplay muted loop>
-                <source src="./assets/video/Emi Bertea video.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="testimonial">
-            <p class="text"> “Great customer value and a wonderful experience with
-                <br>
-                Emi Bertea Barbershop! I highly recommend!!...”
-            </p>
-            <p class="text">- Beu E.</p>
-        </div>
-    </section>
-    <section class="container" id="services">
-        <div>
-            <h2 class="small-title">Our services</h2>
-        </div>
-        <div class="all-services">
-            <div class="services">
-                <div class="service">
-                    <p class="text">Haircut</p>
-                    <p class="text">£28 - £20</p>
-                </div>
-                <div class="service">
-                    <p class="text">Hair and beard</p>
-                    <p class="text">£40 - £30</p>
-                </div>
-                <div class="service">
-                    <p class="text">Beard Trim</p>
-                    <p class="text">£15 - £12</p>
-                </div>
-                <div class="service">
-                    <p class="text">Children (under 10)</p>
-                    <p class="text">£25 - £15</p>
-                </div>
-                <div class="service">
-                    <p class="text">Haircut + wash + style</p>
-                    <p class="text">£35 - £25</p>
-                </div>
-                <div class="service">
-                    <p class="text">Haircut + beard + wash + style</p>
-                    <p class="text">£45 - £35</p>
-                </div>
-                <div class="service">
-                    <p class="text">Eyebrows (pensat)</p>
-                    <p class="text">£18</p>
-                </div>
-                <div class="service">
-                    <p class="text">Wash + Style</p>
-                    <p class="text">£5</p>
-                </div>
-            </div>
-            <div class="services-img__div">
-                <img class="services-img" src="./assets/barbers/Emi.jpg" alt="Emi with a new haircut">
-            </div>
-        </div>
-    </section>
-    <section class="container" id="team">
-        <div>
-            <h2 class="small-title">Meet our family</h2>
-        </div>
-        <div class="barbers">
-            <div class="first-row">
-                <div class="barber">
-                    <p class="text">Emi</p>
-                    <img src="./assets/team/emi.jpg" alt="Emi">
-                </div>
-                <div class="barber">
-                    <p class="text">Vali</p>
-                    <img src="./assets/team/vali.jpg" alt="Vali">
-                </div>
-                <div class="empty">
-                </div>
-            </div>
-            <div class="second-row">
-                <div class="empty">
-                </div>
-                <div class="barber">
-                    <p class="text">Bogdan</p>
-                    <img src="./assets/team/bogdan.jpg" alt="Bogdan">
-                </div>
-                <div class="barber">
-                    <p class="text">Andrei</p>
-                    <img src="./assets/team/andrei.jpg" alt="Andrei">
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer class="container" id="contacts">
-        <div>
-            <h2 class="small-title">Contact & business hours</h2>
-        </div>
-        <div class="contacts">
-            <div class="contact-info">
-                <div class="footer-logo">
-                    <img src="./assets/logo/LogoBig.png" alt="Emi Bertea Logo">
-                </div>
-                <div>
-                    <div>
-                        <div class="footer-link">
-                            <a href="tel:07456 434353">
-                                <p class="text book-appointment phone">07456 434353</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="footer-link">
-                            <a
-                                href="https://booksy.com/en-gb/47040_emi-bertea-barbershop-academy_barber-shop_25535_united-kingdom">
-                                <p class="text book-appointment">Book an appointment</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="location">
-                        <p class="text">
-                            22 Station Road, Edgware
-                        </p>
-                    </div>
-                    <div class="instagram">
-                        <a href="https://www.instagram.com/__e.b.b.a__/">
-                            <img src="./assets/insta/Insta.png" alt="Instagram">
-                            <p class="text">Instagram</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div class="left-nav">
+      <ul class="left-links" data-aos="slide-up" data-aos-duration="1000">
+        <li>
+          <a class="nav-link" href="https://github.com/valisaros" target="_blank">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="https://www.linkedin.com/in/valisaros" target="_blank">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="https://www.instagram.com/valisaros/" target="_blank">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="https://www.youtube.com/channel/UCw7JMLrOtxGSzUQa_6CzKPA" target="_blank">
+            <i class="fa fa-youtube-play"></i>
+          </a>
+        </li>
+        </li>
+      </ul>
+    </div>
+    <div class="right-nav" data-aos="slide-up" data-aos-duration="1000">
+      <a class="right-mail" href="mailto:valeriu.saros@yahoo.com" target="_blank">valeriu.saros@yahoo.com</a>
+    </div>
+    <!-------------------------- End Menu ----------------------->
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+      <div class="jumbotron">
+        <p id="hi">Hi, my name is</p>
+        <br>
+        <h1 class="title gradient"><b>Saros Valeriu.</b></h1>
+        <br>
+        <h2 class="subtitle">Full-Stack Web Developer</h2>
+        <p id="mini-text">
+          & Calisthenics Athlete based in Romania.
+          <br>
+          I build things for the web.
+          <br>
+          <a class="btn custom-btn" href="#contact" role="button">Get In Touch</a>
+        </p>
+      </div>
+    </div>
+  </main>
+  <!------------------------------------------------------------- End Home ---------------------------------------------->
 
-            <div class="business-hours">
-                <div class="services">
-                    <div class="service">
-                        <p class="text">Sunday</p>
-                        <p class="text">09:00 am - 05:00 pm</p>
-                    </div>
-                    <div class="service">
-                        <p class="text">Monday</p>
-                        <p class="text">10:00 am - 08:00 pm</p>
-                    </div>
-                    <div class="service">
-                        <p class="text">Tuesday</p>
-                        <p class="text">10:00 am - 08:00 pm</p>
-                    </div>
-                    <div class="service">
-                        <p class="text">WEDNESDAY</p>
-                        <p class="text">10:00 am - 08:00 pm</p>
-                    </div>
-                    <div class="service">
-                        <p class="text">Thursday</p>
-                        <p class="text">10:00 am - 08:00 pm</p>
-                    </div>
-                    <div class="service">
-                        <p class="text">Friday</p>
-                        <p class="text">10:00 am - 08:00 pm</p>
-                    </div>
-                    <div class="service">
-                        <p class="text">Saturday</p>
-                        <p class="text">09:00 am - 09:00 pm</p>
-                    </div>
-                </div>
+  <!------------------------------------------------------------- Start Projects ---------------------------------------->
+  <div id="projects">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="titles">
+        <span class="count-titles-project gradient">
+        </span>
+        Projects
+      </h2>
+      <div class="row">
+        <div data-aos="fade-in" data-aos-duration="1000">
+          <a href="" target="_blank">
+            <img class="img-fluid img-project" src="./assets/projects-ph/CalisthenicsProject.png" alt="Amazon Clone">
+          </a>
+        </div>
+        <div class="text-project">
+          <h2 class="name-project">Calisthenics Training</h2>
+          <p>Full body weight training platform. Currently working in my free time.
+            <br>
+            Besides the webpage, there will be also an Android and iOS app. Some of the programs: skills, fat loss,
+            muscle
+            building.
+          </p>
+          <ul>
+            <li>
+              React
+            </li>
+            <li>
+              CSS3
+            </li>
+            <li>
+              Flexbox
+            </li>
+          </ul>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a class="cali-link" href="" target="_blank">
+                <i class="fa fa-eye-slash gradient">
+                </i>
+                Private Code
+              </a>
+              <a class="btn custom-btn cali-btn" href="" target="_blank">
+                Visit Project
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="text-project" id="a">
+          <h2 class="name-project">Amazon Clone</h2>
+          <p>Full E-commerce Functionality. The user authentication was done through Firebase and the payments through
+            Stripe.
+            <br>
+            The app is pulling data from the data layer which was built using React Context API.
+          </p>
+          <ul>
+            <li>
+              React
+            </li>
+            <li>
+              React Context API
+            </li>
+            <li>
+              Firebase
+            </li>
+            <li>
+              Stripe
+            </li>
+          </ul>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="https://github.com/valisaros/react-amazon-clone" target="_blank">
+                <i class="fa fa-code gradient">
+                </i>
+                Source Code
+              </a>
+              <a class="btn custom-btn" href="https://clone-amaz-valisaros.web.app/" target="_blank">
+                Visit Project
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="b" data-aos="fade-in" data-aos-duration="1000">
+          <a href="https://clone-amaz-valisaros.web.app/" target="_blank">
+            <img class="img-fluid img-project" src="./assets/projects-ph/AmazonClone.gif" alt="Amazon Clone">
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div data-aos="fade-in" data-aos-duration="1000">
+          <a href="https://spotify-clone-valisaros.web.app/" target="_blank">
+            <img class="img-fluid img-project" src="./assets/projects-ph/SpotifyClone.gif" alt="Spotify Clone">
+          </a>
+        </div>
+        <div class="text-project">
+          <h3 class="name-project">Spotify Clone</h3>
+          <p>The playlists are pulled dynamically from the Spotify through the data layer which was build with React
+            Context API.</p>
+          <ul>
+            <li>
+              React
+            </li>
+            <li>
+              React Context API
+            </li>
+            <li>
+              Spotify Web API
+            </li>
+            <li>
+              Firebase
+            </li>
+          </ul>
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="https://github.com/valisaros/react-spotify-clone" target="_blank">
+                <i class="fa fa-code gradient">
+                </i>
+                Source Code
+              </a>
+              <a class="btn custom-btn" href="https://spotify-clone-valisaros.web.app/" target="_blank">
+                Visit Project
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------------------------- End Projects ------------------------------------------>
+
+  <div class="container">
+    <div class="intro__slides" id="slider">
+      <h2 class="testimonials__title gradient">What people that worked with me say:</h2>
+      <input type="radio" name="slider" id="slide1" checked>
+      <input type="radio" name="slider" id="slide2">
+      <input type="radio" name="slider" id="slide3">
+      <input type="radio" name="slider" id="slide4">
+      <div id="slides">
+        <div id="overflow">
+          <div class="inner">
+            <div class="slide slide_1">
+              <div class="slide-content">
+                <h3>"Vali was very easy to work with and wanted to help even beyond the job role. I am excited to work
+                  with him again in the future. He was tentative to all my issues and communicated clearly and promptly.
+                  He delivered the job in a well timely manner and his work is very clean and understandable even beyond
+                  my own understanding."</h3>
+                <p>- Dana B.</p>
+              </div>
             </div>
+            <div class="slide slide_2">
+              <div class="slide-content">
+                <h3>"Valeriu, was extremely knowledgeable and creative on the project that he completed on time. There
+                  were no issues with communication and understanding of the requirements. Good Job!"</h3>
+                <p>- Leonid G.</p>
+              </div>
+            </div>
+            <div class="slide slide_3">
+              <div class="slide-content">
+                <h3>"Valeriu was an absolute pleasure to work with. Would recommend 10/10!"</h3>
+                <p>- Andrew S.</p>
+              </div>
+            </div>
+            <div class="slide slide_4">
+              <div class="slide-content">
+                <h3>"Very good designer. Exploring more with him."</h3>
+                <p>- Sanjay R.</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="copyright">
-            <p class="text">© 2021 emi bertrea</p>
+      </div>
+      <!-- <div id="controls">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+    </div> -->
+      <div id="bullets">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+      </div>
+    </div>
+  </div>
+
+
+  <!-------------------------------------------------------------- Start About ------------------------------------------->
+  <div id="about">
+    <div class="container" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="titles aboutTitle">
+        <span class="count-titles-about gradient">
+        </span>
+        About Me
+      </h2>
+      <div class="about-content">
+        <div class="row">
+          <div class="about-text">
+            <p> &nbsp &nbsp Hello! Saros Valeriu is a <span class="gradient bold">5 Star Rated</span> freelancer with
+              <span class="gradient bold">100% Job Success </span>rate on
+              <a href="https://www.upwork.com/freelancers/~01acb76a781e5141f2" target="_blank" class="upwork bold">
+                Upwork.
+              </a>
+            </p>
+            <p>
+              &nbsp &nbsp He is a Full-Stack Web Developer & Calisthenics Athlete based in <span
+                id="country">Romania</span>.
+            </p>
+            <p>
+              &nbsp &nbsp With over 1800 hours of experience just on FreeCodeCamp he built an Amazon clone with Full
+              E-commerce
+              Functionality and a Spotify clone.
+            </p>
+            <p>
+              &nbsp &nbsp Before he completed the
+              <a href="https://www.freecodecamp.org/certification/valisaros/full-stack" target="_blank">
+                Legacy Full-Stack Web Developer Certification
+              </a>
+              on the FreeCodeCamp with over 1800 hours of coursework.
+              He also learned to retrieve, process and visualise data with Python from the
+              <a href="https://www.coursera.org/verify/specialization/5XJZYYS7TSUQ" target="_blank">
+                Python Specialization offered by University of Michigan.
+              </a>
+
+            </p>
+          </div>
+          <div id="profile-pic">
+            <img class="img-fluid" src="./assets/logo/valisaros.png" alt="Saors Valeriu portrait">
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </div>
+  <!------------------------------------------------------- End About ------------------------------------------------------>
+
+  <!------------------------------------------------------- Start Skills --------------------------------------------------->
+  <div id="skills">
+    <div class="container">
+      <h2 class="skills-text">Skills</h2>
+      <div class="row" data-aos="fade-up" data-aos-duration="1000">
+        <div>
+          <h2>Front End</h2>
+          <p>React.js + Redux</p>
+          <p>React Context API</p>
+          <p>JavaScript</p>
+          <p>Bootstrap</p>
+          <p>jQuery</p>
+          <p>Sass</p>
+          <p>CSS3 + Flexbox & Grid</p>
+          <p>HTML5</p>
+        </div>
+        <div>
+          <h2>Design</h2>
+          <p>Figma</p>
+          <p>Adobe Photoshop</p>
+          <p>Adobe Lightroom</p>
+          <p>UI/UX design</p>
+          <p>User Stories</p>
+          <p>Wireframing</p>
+          </ul>
+        </div>
+        <div>
+          <h2>Back End</h2>
+          <p>Node.js</p>
+          <p>Express.js</p>
+          <p>Firebase</p>
+          <p>MongoDB & Mongoose</p>
+          <p>JSON APIs & Ajax</p>
+          <p>Quality Assurance - Chai</p>
+          <p>Information Security - HelmetJS</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------------------------------------------------------------ End Skills ---------------------------------------------------->
+
+  <!------------------------------------------------------------ Start Contact ------------------------------------------------->
+  <div id="contact">
+    <div class="container contact-zone" data-aos="fade-up" data-aos-duration="1000">
+      <h2 class="contact-title">
+        <span class="count-titles-contact gradient">
+        </span>
+        Get In Touch
+      </h2>
+      <p id="lets-talk">I am looking for new challenging opportunities,
+        whether it's a job, a project or anything else.
+        You can say "Hi" by sending an email.
+        <br>
+        I'll try to respond as fast as I can.
+      </p>
+      <div class="row">
+        <a id="email-btn" class="btn custom-btn" href="mailto:valeriu.saros@yahoo.com" target="_blank">Send an Email</a>
+      </div>
+    </div>
+  </div>
+  <footer id="copyright">
+    <a href="https://github.com/valisaros/valisaros.github.io" target="_blank" class="copyright-text">Made with passion
+      by Saros Valeriu</a>
+    <ul class="footer-links">
+      <li>
+        <a class="nav-link" href="www.github.com/valisaros" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" href="https://www.linkedin.com/in/valisaros" target="_blank">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" href="https://www.instagram.com/valisaros/" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </li>
+      <li>
+        <a class="nav-link" href="https://www.youtube.com/channel/UCw7JMLrOtxGSzUQa_6CzKPA" target="_blank">
+          <i class="fa fa-youtube-play"></i>
+        </a>
+      </li>
+      </li>
+    </ul>
+  </footer>
+  <!----------------------------------------------------------------- End Contact ------------------------------------------->
+
+  <!-- JavaScript -->
+  <script src="./js/main.js"></script>
+  <!-- AOS -->
+  <script src="./js/aos/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- Body Scroll -->
+  <script src="./js/lock-scroll/bodyScrollLock.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="./bootstrap-4.5.2/bootstrap-scripts/jquery-3.5.1.slim.min.js"></script>
+  <script src="./bootstrap-4.5.2/bootstrap-scripts/pooper-1.16.1.min.js"></script>
+  <script src="./bootstrap-4.5.2/bootstrap-scripts/bootstrap-4.5.2.min.js"></script>
+
 </body>
-<script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
-<script>
-    new kursor({
-        type: 4,
-        color: '#ffffff',
-        removeDefaultCursor: true
-    });
-</script>
 
 </html>
+
+<!-- Testing again -->
