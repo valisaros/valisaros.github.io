@@ -3,6 +3,8 @@
   --white: #ebebeb;
   --accent: #c3bdfa;
   --dark-gray: #404040;
+  --white-2: white;
+  --black: black;
 }
 
 .w-layout-blockcontainer {
@@ -343,6 +345,10 @@ blockquote {
 .heading-wrapper {
   width: 65em;
   letter-spacing: -.04375em;
+}
+
+.heading-wrapper._2 {
+  width: 66em;
 }
 
 .projects-wrapper {
@@ -2035,6 +2041,10 @@ blockquote {
 
   .case-navbar {
     padding-top: 3em;
+  }
+
+  .arrow-btn.left {
+    border-width: 1px;
   }
 }
 
