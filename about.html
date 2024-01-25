@@ -1,13 +1,13 @@
-<!DOCTYPE html><!--  Last Published: Tue Dec 19 2023 12:01:17 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Thu Jan 25 2024 07:21:36 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="65376b550360b8ed50db1b94" data-wf-site="6534071c6047abfdf8b13eb6">
 <head>
   <meta charset="utf-8">
-  <title>About - Valeriu Saros</title>
+  <title>Valeriu Saros | About</title>
   <meta content="Valeriu&#x27;s profound knowledge in design enables him to seamlessly blend creativity with functionality, resulting in experiences that leave a lasting impression and exude personality." name="description">
-  <meta content="About - Valeriu Saros" property="og:title">
+  <meta content="Valeriu Saros | About" property="og:title">
   <meta content="Valeriu&#x27;s profound knowledge in design enables him to seamlessly blend creativity with functionality, resulting in experiences that leave a lasting impression and exude personality." property="og:description">
   <meta content="https://i.postimg.cc/ncb7fmVY/Graph-Vali-Saros.jpg" property="og:image">
-  <meta content="About - Valeriu Saros" property="twitter:title">
+  <meta content="Valeriu Saros | About" property="twitter:title">
   <meta content="Valeriu&#x27;s profound knowledge in design enables him to seamlessly blend creativity with functionality, resulting in experiences that leave a lasting impression and exude personality." property="twitter:description">
   <meta content="https://i.postimg.cc/ncb7fmVY/Graph-Vali-Saros.jpg" property="twitter:image">
   <meta property="og:type" content="website">
@@ -109,8 +109,8 @@ a {
   </div>
   <section class="section home">
     <div class="w-layout-blockcontainer container w-container">
-      <div class="heading-wrapper">
-        <h1 class="h1">Valeriu is an expert digital designer and brand strategist, helping companies gain competitive advantage.</h1>
+      <div class="heading-wrapper _2">
+        <h1 class="h1">Valeriu is an expert digital designer, helping companies gain a competitive advantage with a strategy-led approach.</h1>
       </div>
     </div>
   </section>
@@ -159,7 +159,7 @@ a {
   <section class="section principles">
     <div class="container">
       <div class="h2-wrapper">
-        <h2 class="h2 dark">These principles influence my designs and define who I am as a person</h2>
+        <h2 class="h2 dark">Principles that influence my work and define who I am as a person.</h2>
       </div>
       <div data-delay="10000" data-animation="slide" class="slider w-slider" data-autoplay="true" data-easing="ease-in-out-quart" data-hide-arrows="false" data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3" data-duration="1000" data-infinite="true">
         <div class="mask w-slider-mask">
@@ -182,7 +182,7 @@ a {
                   <p class="p"><br>Whether fostering connections between individuals or cultivating a bond between users and products, I firmly believe in the authenticity of genuine connections.</p>
                 </div>
               </div>
-              <div class="right-part"><img src="images/Connections-min.jpg" loading="eager" width="924" sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 924px) 100vw, (max-width: 991px) 924px, 66vw" alt="" srcset="images/Connections-min.jpg 500w, images/Connections-min.jpg 800w, images/Connections-min.jpg 924w" class="img sslider"></div>
+              <div class="right-part"><img src="images/Connections-min.jpg" loading="eager" width="924" sizes="(max-width: 479px) 92vw, (max-width: 767px) 94vw, (max-width: 924px) 100vw, (max-width: 991px) 924px, 66vw" alt="" srcset="images/Connections-min-p-500.jpg 500w, images/Connections-min-p-800.jpg 800w, images/Connections-min.jpg 924w" class="img sslider"></div>
             </div>
           </div>
           <div class="slide slide-1 w-slide">
@@ -262,6 +262,31 @@ a {
 $('a').mouseleave(function() {
   $('.cursor').click();
 });
+</script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+  <script>
+// Lenis scroll
+// Scrolling library
+const lenis = new Lenis({
+  duration: 1.75,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+  direction: 'vertical', // vertical, horizontal
+  gestureDirection: 'vertical', // vertical, horizontal, both
+  smooth: true,
+  mouseMultiplier: 1,
+  smoothTouch: false,
+  touchMultiplier: 2,
+  infinite: false,
+})
+//get scroll value
+lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+  console.log({ scroll, limit, velocity, direction, progress })
+})
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
 </script>
 </body>
 </html>

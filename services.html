@@ -1,13 +1,13 @@
-<!DOCTYPE html><!--  Last Published: Tue Dec 19 2023 12:01:17 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  Last Published: Thu Jan 25 2024 07:21:36 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="65375e1a68de5add01da7d14" data-wf-site="6534071c6047abfdf8b13eb6">
 <head>
   <meta charset="utf-8">
-  <title>Services - Valeriu Saros</title>
+  <title>Valeriu Saros | Services</title>
   <meta content="Creating effective strategies, powerful identities, and memorable experiences to connect people with brands." name="description">
-  <meta content="Services - Valeriu Saros" property="og:title">
+  <meta content="Valeriu Saros | Services" property="og:title">
   <meta content="Creating effective strategies, powerful identities, and memorable experiences to connect people with brands." property="og:description">
   <meta content="https://i.postimg.cc/ncb7fmVY/Graph-Vali-Saros.jpg" property="og:image">
-  <meta content="Services - Valeriu Saros" property="twitter:title">
+  <meta content="Valeriu Saros | Services" property="twitter:title">
   <meta content="Creating effective strategies, powerful identities, and memorable experiences to connect people with brands." property="twitter:description">
   <meta content="https://i.postimg.cc/ncb7fmVY/Graph-Vali-Saros.jpg" property="twitter:image">
   <meta property="og:type" content="website">
@@ -120,10 +120,10 @@ a {
         <div class="service-image-container"><img src="images/Branding-3-min.jpg" loading="lazy" sizes="(max-width: 767px) 100vw, 50vw" alt="" width="800" srcset="images/Branding-3-min-p-500.jpg 500w, images/Branding-3-min-p-800.jpg 800w, images/Branding-3-min-p-1080.jpg 1080w, images/Branding-3-min.jpg 1600w" class="image"></div>
         <div class="service-info-container">
           <div class="serive-info">
-            <h2 class="h2 dark">Brand Strategy &amp; Visual Identity</h2>
+            <h2 class="h2 dark">Brand &amp; <br>Visual Identity</h2>
             <div class="p-text-wrapper">
               <p class="p dark">Everything a brand does is informed by its strategy. It forms the foundation of the brand, defining who it is and why it exists. It comprises four key tenets: mission, vision, brand idea, and brand personality.</p>
-              <p class="p dark">The visual identity is a set of visual elements that represent a brand and contribute to its recognition. It comprises the logo, color palette, typography, art direction, layouts, and design guidelines.</p>
+              <p class="p dark">The visual identity is a set of visual elements that represent a brand and contribute to its recognition. It comprises the logo, color palette, typography, art direction, layouts, and design guidelines</p>
             </div>
           </div>
         </div>
@@ -131,7 +131,7 @@ a {
       <div class="service reverse">
         <div class="service-info-container left">
           <div class="serive-info left">
-            <h2 class="h2 dark left mobile">Web &amp; Mobile Design</h2>
+            <h2 class="h2 dark left mobile">Web &amp;<br>Mobile Design</h2>
             <div class="p-text-wrapper">
               <p class="p dark left mobile">Whether designing a website or an app, it should always be memorable and functional.</p>
               <p class="p dark left mobile">Meticulously crafted, my designs seamlessly blend creativity with functionality, ensuring a unique and user-centric experience.</p>
@@ -210,6 +210,31 @@ a {
 $('a').mouseleave(function() {
   $('.cursor').click();
 });
+</script>
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+  <script>
+// Lenis scroll
+// Scrolling library
+const lenis = new Lenis({
+  duration: 1.75,
+  easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+  direction: 'vertical', // vertical, horizontal
+  gestureDirection: 'vertical', // vertical, horizontal, both
+  smooth: true,
+  mouseMultiplier: 1,
+  smoothTouch: false,
+  touchMultiplier: 2,
+  infinite: false,
+})
+//get scroll value
+lenis.on('scroll', ({ scroll, limit, velocity, direction, progress }) => {
+  console.log({ scroll, limit, velocity, direction, progress })
+})
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+requestAnimationFrame(raf)
 </script>
 </body>
 </html>
