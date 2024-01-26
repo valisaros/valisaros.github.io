@@ -1253,6 +1253,10 @@ blockquote {
     max-width: 800px;
   }
 
+  .heading-wrapper._2 {
+    width: 100%;
+  }
+
   .projects-wrapper {
     grid-column-gap: 12px;
     grid-row-gap: 48px;
@@ -2043,7 +2047,7 @@ blockquote {
     padding-top: 3em;
   }
 
-  .arrow-btn.left {
+  .arrow-btn.right, .arrow-btn.left {
     border-width: 1px;
   }
 }
